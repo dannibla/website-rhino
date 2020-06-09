@@ -1932,6 +1932,7 @@ a {
 }
 .pattern div img {
   width: 35px;
+  opacity: 0.1;
 }
 .pattern2 {
   position: absolute;
@@ -1949,6 +1950,7 @@ a {
 }
 .pattern2 div img {
   width: 45px !important;
+  opacity: 0.1;
 }
 .preloaderWindow {
   position: fixed;
