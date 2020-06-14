@@ -40,9 +40,9 @@
 		
 	.floating-wpp {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
-	z-index:10000;
+    bottom: 24px;
+    left: 24px;
+	z-index:100000;
     font-size: 14px;
     transition: bottom 0.2s;
 }
@@ -50,6 +50,8 @@
 .floating-wpp .floating-wpp-button {
     position: relative;
     border-radius: 50%;
+	width: 60px!important;
+    height: 60px!important;
     box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.4);
     transition: box-shadow 0.2s;
     cursor: pointer;
@@ -61,6 +63,7 @@
     position: absolute;
     width: 100%;
     height: auto;
+    padding: 2px;
     object-fit: cover;
     top: 50%;
     left: 50%;
@@ -95,7 +98,7 @@
     padding: 0 12px 12px 12px;
     width: 260px;
     height: auto;
-	right: 0;
+	left: 0;
     bottom: 82px;
     opacity: 1;
 }
