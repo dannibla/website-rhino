@@ -1,0 +1,65 @@
+<svg viewBox="0 0 604 386" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+    <defs>
+        <path d="M-12,-14 L625,-14 L625,412 L-12,412 L-12,-14 Z M72,17 L72,67 L84,67 L84,17 L72,17 Z M103,17 L103,67 L110,67 L110,17 L103,17 Z M115,17 L115,67 L125,67 L125,17 L115,17 Z M38,87 L38,183 L47,183 L47,87 L38,87 Z M38,276 L38,295 L47,295 L47,276 L38,276 Z M6,276 L6,295 L15,295 L15,276 L6,276 Z M67,318 L67,337 L76,337 L76,318 L67,318 Z M123,341 L123,351 L129,351 L129,341 L123,341 Z M103,318 L103,350 L114,350 L114,318 L103,318 Z M156,378 L156,388 L162,388 L162,378 L156,378 Z M136,374 L136,387 L147,387 L147,374 L136,374 Z M132,318 L132,334 L141,334 L141,318 L132,318 Z M145,318 L145,334 L154,334 L154,318 L145,318 Z M88,87 L88,183 L97,183 L97,87 L88,87 Z M123,87 L123,103 L130,103 L130,87 L123,87 Z M135,87 L135,103 L145,103 L145,87 L135,87 Z M193,127 L193,143 L208,143 L208,127 L193,127 Z M206,17 L206,106 L223,106 L223,17 L206,17 Z M242,17 L242,106 L249,106 L249,17 L242,17 Z M254,17 L254,106 L263,106 L263,17 L254,17 Z M271,87 L271,106 L280,106 L280,87 L271,87 Z M344,17 L344,106 L348,106 L348,17 L344,17 Z M38,17 L38,67 L47,67 L47,17 L38,17 Z" id="path-1"></path>
+    </defs>
+    <style>
+      .line {
+        stroke-width: 5;
+        stroke: #313945;
+        stroke-dasharray: 700;
+        stroke-dashoffset: 700;
+        animation: dash 12s linear infinite;
+      }
+
+      .line:nth-child(even) {
+        animation-delay: 1s;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .line {
+          animation: none;
+        }
+      }      
+
+      @keyframes dash {
+        0% {
+          stroke-dashoffset: 700;
+        }
+
+        20%, 90% {
+          stroke-dashoffset: 0;
+        }
+
+        100% {
+          stroke-dashoffset: -700;
+        }
+      }
+    </style>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g mask="url(#mask-2)" stroke="#313945" stroke-linecap="square" stroke-width="5">
+            <g transform="translate(3.000000, 2.000000)" id="Line">
+                <path class="line" d="M32.2800619,1.33131488 L188.68957,1.33131488"></path>
+                <path class="line" d="M32.8080767,20.3313149 L484.104301,20.3313149"></path>
+                <path class="line" d="M32.900836,39.3313149 L536.001483,39.3313149"></path>
+                <path class="line" d="M33.0114337,58.3313149 L597.878893,58.3313149"></path>
+                <path class="line" d="M32.2800619,77.3313149 L188.68957,77.3313149"></path>
+                <path class="line" d="M32.5601238,96.3313149 L345.37914,96.3313149"></path>
+                <path class="line" d="M67.2194115,114.331315 L189.756797,114.331315"></path>
+                <path class="line" d="M100.526231,133.331315 L394.416708,133.331315"></path>
+                <path class="line" d="M66.0035677,152.331315 L67.9960455,152.331315"></path>
+                <path class="line" d="M32.1123815,171.331315 L94.8754325,171.331315"></path>
+                <path class="line" d="M32.3853081,190.331315 L247.572912,190.331315"></path>
+                <path class="line" d="M32.5761783,209.331315 L354.361345,209.331315"></path>
+                <path class="line" d="M0.082056352,285.331315 L45.909046,285.331315"></path>
+                <path class="line" d="M32.4584453,304.331315 L288.491844,304.331315"></path>
+                <path class="line" d="M62.4869866,323.331315 L334.460208,323.331315"></path>
+                <path class="line" d="M98.0588665,342.331315 L130.93475,342.331315"></path>
+                <path class="line" d="M133.68856,361.331315 L518.236777,361.331315"></path>
+                <path class="line" d="M131.055299,381.331315 L161.938705,381.331315"></path>
+            </g>
+        </g>
+    </g>
+</svg>

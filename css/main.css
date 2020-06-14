@@ -679,6 +679,28 @@ a {
 .fp-viewing-contactPage .sidebar .scrollDown {
   display: none;
 }
+#particles-js {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.particles-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+  top: calc(50% - 100px);
+  left: calc(50% - 150px);
+}
+
+.particles-logo {
+  display: inline-block;
+  height: 100px;
+  z-index: 100;
+}
 .sliderSection {
   background: #25241E;
   background: -moz-linear-gradient(top, #25241E 75%, #25241E 100%);
@@ -865,6 +887,7 @@ a {
   left: 50%;
   margin-left: -490px;
   top: 0;
+  opacity: 0.4;
 }
 .clientsSection .headline .headlineMiddle svg .number0 {
   stroke-dasharray: 953, 953;
@@ -1032,11 +1055,18 @@ a {
 }
 .clientsSection .logoSlider .logoColumn .logoContainer {
   text-align: center;
+  transform: scale(0.7);
+  transition: transform .2s;
+  max-width: 180px;
+  margin: 0 auto;
 }
 .clientsSection .logoSlider .logoColumn .logoContainer img {
   max-width: 100%;
   margin: 0 auto;
   cursor: pointer;
+  background: #fff;
+  padding:10px;
+  border-radius: 50%;
 }
 .clientsSection .logoSlider .logoColumn .logoContainer .hover {
   display: none;
@@ -1047,6 +1077,12 @@ a {
 .clientsSection .logoSlider .logoColumn .logoContainer:hover .normal {
   display: none;
 }
+
+.clientsSection .logoSlider .logoColumn.current .logoContainer {
+  display: block;
+  transform: scale(1);
+}
+
 .clientsSection .logoSlider .logoColumn.current .logoContainer .hover {
   display: block;
 }
@@ -1287,6 +1323,7 @@ a {
   right: -20px;
   width: 100px;
   z-index: 0;
+  opacity: 0.4;
 }
 .whoSection .columns .leftColumn .rowContainer .count svg path {
   stroke-dasharray: 635, 635;
@@ -1335,6 +1372,7 @@ a {
   left: -20px;
   width: 100px;
   z-index: 0;
+  opacity: 0.4;
 }
 .whoSection .columns .rightColumn .rowContainer .count svg path {
   stroke-dasharray: 677, 677;
@@ -1511,6 +1549,7 @@ a {
   position: relative;
 }
 .contactSection .columns .column .title svg {
+  opacity: 0.4;
   position: absolute;
   top: 0;
   left: 50%;
@@ -1719,6 +1758,7 @@ a {
 }
 .rhinoSlider .rhinoSlide .navigation {
   position: relative;
+  text-align:center;
   z-index: 10;
 }
 .rhinoSlider .rhinoSlide .navigation .column {
@@ -3258,6 +3298,11 @@ a {
   .whoSection .intro {
     padding-bottom: 10px;
   }
+  
+	.whoSection .intro .particles-text {
+		top: 0;
+	}
+
   .whoSection .intro img {
     width: 140px;
   }
