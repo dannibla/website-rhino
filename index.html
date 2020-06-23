@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="./assets/css/slick.css">
         <link rel="stylesheet" href="./assets/css/slick-theme.css">
         <link rel="stylesheet" href="./assets/css/jquery.fullpage.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="./css/main.css" />
 
         <script src="./assets/js/jquery.min.js"></script>
@@ -35,6 +36,7 @@
         <script src="./assets/js/modernizr.min.js"></script>
         <script src="./assets/js/jquery.fullpage.js"></script>
         <script src="./assets/js/particles.min.js"></script>
+        <script src="./assets/js/lottie.js"></script>
         <script src="./js/main.js"></script>
 		<style>
 		
@@ -162,7 +164,7 @@
 			background-position: center top, center bottom -2px, center center;
 			margin: 0 auto;
 			position: relative;
-			padding-bottom: 17vmin;
+			padding-bottom: 15px;
 			overflow: hidden;
 			min-height: 80vh;
 			display: flex;
@@ -1019,6 +1021,157 @@
     }
 }
 
+#loaderAnime {
+    height: 140px;
+}
+
+
+.l-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px;
+}
+@media screen and (max-width: 760px) {
+  .l-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.b-game-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-bottom: 150%;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+.b-game-card__cover {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-size: cover;
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  will-change: transform;
+  -webkit-transform: skewX(0.001deg);
+          transform: skewX(0.001deg);
+  -webkit-transition: -webkit-transform .35s ease-in-out;
+  transition: -webkit-transform .35s ease-in-out;
+  transition: transform .35s ease-in-out;
+  transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
+}
+.b-game-card__cover::after {
+  display: block;
+  content: '';
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  will-change: transform;
+  -webkit-transition: -webkit-transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  transition: -webkit-transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1), -webkit-transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+}
+.b-game-card:hover .b-game-card__cover {
+  -webkit-transform: rotateX(7deg) translateY(-6px);
+          transform: rotateX(7deg) translateY(-6px);
+}
+.b-game-card:hover .b-game-card__cover::after {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.b-game-card::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
+  will-change: opacity;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transform: skewX(0.001deg);
+          transform: skewX(0.001deg);
+  -webkit-transition: opacity .5s ease-in-out, -webkit-transform .35s ease-in-out;
+  transition: opacity .5s ease-in-out, -webkit-transform .35s ease-in-out;
+  transition: transform .35s ease-in-out, opacity .5s ease-in-out;
+  transition: transform .35s ease-in-out, opacity .5s ease-in-out, -webkit-transform .35s ease-in-out;
+}
+.b-game-card:hover::before {
+  opacity: 0.6;
+  -webkit-transform: rotateX(7deg) translateY(-6px) scale(1.05);
+          transform: rotateX(7deg) translateY(-6px) scale(1.05);
+}
+
+#social-test {
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+  padding: 80px;
+}
+#social-test h2 {
+    color: #f9b22c;
+    font-weight: 100;
+    font-size: 28px;
+}
+#social-test .social {
+  padding-left: 0px;
+}
+#social-test li {
+  color: #8C6A3A;
+  list-style-type: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 1.4;
+  padding: 1%;
+  border: 1px solid #8C6A3A;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: ease 0.3s;
+}
+#social-test li a {
+  color: #8C6A3A;
+  text-decoration: none;
+}
+#social-test li:hover {
+  color: #f9b22c;
+  border: 1px solid #f9b22c;
+}
+
+#social-test li a:hover {
+  color: #f9b22c;
+}
+
+.social:hover > li {
+  opacity: 0.5;
+}
+.social:hover > li:hover {
+  opacity: 1;
+}
 
 		</style>
     </head>
@@ -1028,19 +1181,7 @@
         <div class="preloaderWindow">
             <div class="preloaderContainer">
                 <div class="preloaderMiddle">
-                    <div class="logo">
-                        <img src="./img/logo.png" alt="">
-                        <div class="patternImg patternImg1"><img src="./img/symbol/3.svg" alt=""></div>
-                        <div class="patternImg patternImg2"><img src="./img/symbol/3.svg" alt=""></div>
-                        <div class="patternImg patternImg3"><img src="./img/symbol/2.svg" alt=""></div>
-                        <div class="patternImg patternImg4"><img src="./img/symbol/8.svg" alt=""></div>
-                        <div class="patternImg patternImg5"><img src="./img/symbol/9.svg" alt=""></div>
-                        <div class="patternImg patternImg6"><img src="./img/symbol/5.svg" alt=""></div>
-                    </div>
-                    <div class="line">
-                        <div class="current"></div>
-                    </div>
-                    <div class="text"><!-- Loading, please wait... --></div>
+                    <div id="loaderAnime"></div>
                 </div>
             </div>
         </div>
@@ -1131,7 +1272,7 @@
             <div id="fullpage">
 
 				<div class="section fp-auto-height">
-                    <div class="websitesSection">
+                    <div class="websitesSection" style="padding-top:120px;">
 					
 							<div class="rhino__intro">
 								  <div class="rhino__intro__center">
@@ -1210,13 +1351,21 @@
 									</div>
 								  </div>
 
-							</div>
-						
+                            </div>
+                            <div class="content">
+                                <div class="button">
+                                    <a href="#" target="_blank" tabindex="-1">
+                                        About Us <span><img src="./img/action/arrow.svg" alt=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                            
                     </div>
                 </div>
+                
 
                 <div class="section fp-auto-height">
-                    <div class="whySection" data-parallax='{"y": -40}'>
+                    <div class="whySection" data-parallax='{"y": -40}' style="padding-top:120px;">
                         <div class="leftSvg">
                             <svg id="bigCirclesSvg" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 780 1560" enable-background="new 0 0 780 1560" xml:space="preserve">
@@ -1238,9 +1387,9 @@
                                                     viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
                                                     <circle class="circle1" fill="#1d1c16" stroke="#8C6A3A" stroke-width="2" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
                                                 </svg>
-                                                <img src="./img/why-us/help.svg" alt="">
+                                                <img src="./img/service/endless support.png" alt="">
                                             </div>
-                                            <div class="title">Outstanding <br>Support</div>
+                                            <div class="title">Endless <br>Support</div>
                                         </div>
                                         <div class="iconRow icon2 middle">
                                             <div class="circle">
@@ -1248,9 +1397,9 @@
                                                     viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
                                                     <circle class="circle2" fill="#1d1c16" stroke="#8C6A3A" stroke-width="2" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
                                                 </svg>
-                                                <img src="./img/why-us/mail.svg" alt="">
+                                                <img src="./img/service/innovative technology.png" alt="">
                                             </div>
-                                            <div class="title">Advanced <br>Technology</div>
+                                            <div class="title">Innovative <br>Technology</div>
                                         </div>
                                         <div class="iconRow icon3 middle">
                                             <div class="circle">
@@ -1258,9 +1407,9 @@
                                                     viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
                                                     <circle class="circle3" fill="#1d1c16" stroke="#8C6A3A" stroke-width="2" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
                                                 </svg>
-                                                <img src="./img/why-us/help.svg" alt="">
+                                                <img src="./img/service/artistic collection.png" alt="">
                                             </div>
-                                            <div class="title">Creative <br>Collection</div>
+                                            <div class="title">Artistic <br>Collection</div>
                                         </div>
                                         <div class="iconRow icon4">
                                             <div class="circle">
@@ -1268,9 +1417,9 @@
                                                     viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
                                                     <circle class="circle4" fill="#1d1c16" stroke="#8C6A3A" stroke-width="2" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
                                                 </svg>
-                                                <img src="./img/why-us/setup.svg" alt="">
+                                                <img src="./img/service/spontaneous framework.png" alt="">
                                             </div>
-                                            <div class="title">Intuitive <br>Setup</div>
+                                            <div class="title">Spontaneous <br>Framework</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1280,54 +1429,17 @@
                 </div>
 
                 <div class="section fp-auto-height">
-                    <div class="clientsSection">
+                    <div class="clientsSection" style="padding-top:120px;">
                         <div class="wrapper">
-                            <div class="headline" data-parallax='{"y": -40}'>
-                                <div class="headlineTop">Over</div>
-                                <div class="headlineMiddle">
-                                    <h2>200</h2>
-                                    <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 1033 225" enable-background="new 0 0 1033 225" xml:space="preserve">
-                                        <g>
-                                            <path class="number2" fill="none" stroke="#8C6A3A" stroke-width="2" stroke-miterlimit="10" d="M11,219.9c-7.3,0-11-3.2-11-9.5v-7c0-5.1,2.3-10.1,7-15.1l43.8-46.1c13.2-14,25.2-26.4,36.2-37.3
-                                          		c10.9-10.9,16.4-21.9,16.4-33s-2.8-19.3-8.3-24.5c-5.5-5.2-12.5-7.8-21-7.8c-13.5,0-22.9,3.1-28.1,9.4c-5.3,6.3-9.1,12.9-11.4,20.1
-                                          		c-2.2,6.9-6.3,9.4-12.3,7.5l-14.8-5c-4.8-1.7-6.2-6.2-4.1-13.8c3.8-14,11.6-26,23.3-36c11.7-10,29.1-15,52.1-15
-                                          		c24,0,41.5,6.2,52.3,18.5c10.8,12.4,16.3,25.8,16.3,40.2c0,19-7.9,35.7-23.7,50c-15.8,14.3-30.2,28.3-43.1,41.9l-25.2,26.3v0.6
-                                          		c5.9-0.4,10.8-0.6,14.7-0.6h68.6c7.3,0,11,3.2,11,9.5v17.3c0,6.3-3.7,9.5-11,9.5H11z"/>
-                                            <path class="number0" fill="none" stroke="#8C6A3A" stroke-width="2" stroke-miterlimit="10" d="M175.8,115.7c0-39.6,6.2-67.6,18.5-84.2c12.3-16.6,31.2-24.9,56.5-24.9c25.4,0,44.2,8.3,56.5,24.9
-                                          		c12.3,16.6,18.5,44.7,18.5,84.2s-6.2,67.6-18.5,84.2c-12.3,16.6-31.2,24.9-56.5,24.9c-25.4,0-44.2-8.3-56.5-24.9
-                                          		C182,183.3,175.8,155.3,175.8,115.7z M219.2,115.7c0,18.1,1.5,35.4,4.5,52.1c3,16.7,12,25,27.2,25c15.1,0,24.2-8.3,27.2-25
-                                          		c3-16.7,4.5-34.1,4.5-52.1c0-18.1-1.5-35.4-4.5-52.1c-3-16.7-12-25-27.2-25c-15.1,0-24.2,8.3-27.2,25
-                                          		C220.7,80.3,219.2,97.7,219.2,115.7z"/>
-                                            <path class="number0" fill="none" stroke="#8C6A3A" stroke-width="2" stroke-miterlimit="10" d="M351.6,115.7c0-39.6,6.2-67.6,18.5-84.2c12.3-16.6,31.2-24.9,56.5-24.9c25.4,0,44.2,8.3,56.5,24.9
-                                          		c12.3,16.6,18.5,44.7,18.5,84.2s-6.2,67.6-18.5,84.2c-12.3,16.6-31.2,24.9-56.5,24.9c-25.4,0-44.2-8.3-56.5-24.9
-                                          		C357.7,183.3,351.6,155.3,351.6,115.7z M395,115.7c0,18.1,1.5,35.4,4.5,52.1c3,16.7,12,25,27.2,25c15.1,0,24.2-8.3,27.2-25
-                                          		c3-16.7,4.5-34.1,4.5-52.1c0-18.1-1.5-35.4-4.5-52.1c-3-16.7-12-25-27.2-25c-15.1,0-24.2,8.3-27.2,25
-                                          		C396.4,80.3,395,97.7,395,115.7z"/>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="headlineBottom">satisfied users!</div>
-                            </div>
-                            <div class="avatars" data-parallax='{"y": -40}'>
-                                <div class="avatar" style="background-image: url(./img/avatar/avatar1.jpg)"></div>
-                                <div class="avatarBig" style="background-image: url(./img/avatar/avatar2.jpg)"></div>
-                                <div class="avatar" style="background-image: url(./img/avatar/avatar3.jpg)"></div>
-                            </div>
-                            <div class="subTitle" data-parallax='{"y": -20}'>But what do they say?</div>
+                            <div class="subTitle" data-parallax='{"y": -20}'>Our Clients</div>
                             <div class="quoteSlider">
                                 <div class="quote">
-                                    <div class="quoteContainer">
-                                        <div class="start"><img src="./img/action/quote1.svg" alt=""></div>
-                                        <div class="end"><img src="./img/action/quote2.svg" alt=""></div>
-                                        Be Theme has been one of the most popular multipurpose WordPress themes for a long time. It is by far the biggest of the premier themes in terms of functionality, as well as in terms of the number of its ready-to-use pre-made layouts that cover almost any theme you can think of...
-                                    </div>
                                     <div class="logoSlider">
-                                        <div class="logoColumn current">
+                                        <div class="logoColumn">
                                             <div class="logoContainer">
                                                 <a data-slide="1">
                                                     <img class="normal" src="./logo/1.png" alt="">
-                                                    <img class="hover" src="./logo/H1.png" alt="">
+                                                    <img class="hover" src="./logo/1.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -1335,7 +1447,7 @@
                                             <div class="logoContainer">
                                                 <a data-slide="2">
                                                     <img class="normal" src="./logo/2.png" alt="">
-                                                    <img class="hover" src="./logo/H2.png" alt="">
+                                                    <img class="hover" src="./logo/2.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -1343,73 +1455,83 @@
                                             <div class="logoContainer">
                                                 <a data-slide="3">
                                                     <img class="normal" src="./logo/3.png" alt="">
-                                                    <img class="hover" src="./logo/H3.png" alt="">
+                                                    <img class="hover" src="./logo/3.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="logoColumn">
+                                            <div class="logoContainer">
+                                                <a data-slide="2">
+                                                    <img class="normal" src="./logo/4.png" alt="">
+                                                    <img class="hover" src="./logo/4.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+										 <div class="logoColumn">
+                                            <div class="logoContainer">
+                                                <a data-slide="3">
+                                                    <img class="normal" src="./logo/5.png" alt="">
+                                                    <img class="hover" src="./logo/5.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="logoColumn">
+                                            <div class="logoContainer">
+                                                <a data-slide="3">
+                                                    <img class="normal" src="./logo/6.png" alt="">
+                                                    <img class="hover" src="./logo/6.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="quote">
-                                    <div class="quoteContainer">
-                                        <div class="start"><img src="./img/action/quote1.svg" alt=""></div>
-                                        <div class="end"><img src="./img/action/quote2.svg" alt=""></div>
-                                        Pick a unique layout to better represent your client’s project, and then wow them with plenty of integrated goods like MailChimp, Yoast and bbPress. BeTheme receives updates on a weekly basis and has more than 200 shortcodes to fall back on...
-                                    </div>
                                     <div class="logoSlider">
                                         <div class="logoColumn">
                                             <div class="logoContainer">
                                                 <a data-slide="1">
-                                                    <img class="normal" src="./logo/1.png" alt="">
-                                                    <img class="hover" src="./logo/H1.png" alt="">
+                                                    <img class="normal" src="./logo/7.png" alt="">
+                                                    <img class="hover" src="./logo/7.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="logoColumn current">
+                                        <div class="logoColumn">
                                             <div class="logoContainer">
                                                 <a data-slide="2">
-                                                    <img class="normal" src="./logo/2.png" alt="">
-                                                    <img class="hover" src="./logo/H2.png" alt="">
+                                                    <img class="normal" src="./logo/8.png" alt="">
+                                                    <img class="hover" src="./logo/8.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
 										 <div class="logoColumn">
                                             <div class="logoContainer">
                                                 <a data-slide="3">
-                                                    <img class="normal" src="./logo/3.png" alt="">
-                                                    <img class="hover" src="./logo/H3.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-								<div class="quote">
-                                    <div class="quoteContainer">
-                                        <div class="start"><img src="./img/action/quote1.svg" alt=""></div>
-                                        <div class="end"><img src="./img/action/quote2.svg" alt=""></div>
-                                        Yoast and bbPress. BeTheme receives updates on a weekly basis and has more than 200 shortcodes to fall back on Pick a unique layout to better represent your client’s project, and then wow them with plenty of integrated goods like MailChimp, ...
-                                    </div>
-                                    <div class="logoSlider">
-                                        <div class="logoColumn">
-                                            <div class="logoContainer">
-                                                <a data-slide="1">
-                                                    <img class="normal" src="./logo/1.png" alt="">
-                                                    <img class="hover" src="./logo/H1.png" alt="">
+                                                    <img class="normal" src="./logo/9.png" alt="">
+                                                    <img class="hover" src="./logo/9.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="logoColumn">
                                             <div class="logoContainer">
                                                 <a data-slide="2">
-                                                    <img class="normal" src="./logo/2.png" alt="">
-                                                    <img class="hover" src="./logo/H2.png" alt="">
+                                                    <img class="normal" src="./logo/1.png" alt="">
+                                                    <img class="hover" src="./logo/1.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
-										 <div class="logoColumn current">
+										 <div class="logoColumn">
+                                            <div class="logoContainer">
+                                                <a data-slide="3">
+                                                    <img class="normal" src="./logo/2.png" alt="">
+                                                    <img class="hover" src="./logo/2.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="logoColumn">
                                             <div class="logoContainer">
                                                 <a data-slide="3">
                                                     <img class="normal" src="./logo/3.png" alt="">
-                                                    <img class="hover" src="./logo/H3.png" alt="">
+                                                    <img class="hover" src="./logo/3.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -1421,7 +1543,66 @@
                 </div>
 
 				<div class="section fp-auto-height">
-                    <div class="sliderSection">
+                    <div class="sliderSection" style="padding-top:120px;">
+                        <div class="wrapper">
+                            <div class="rhinoSlider" data-parallax='{"y": -40}'>
+                                <div class="rhinoSlide">
+                                    <div class="headline" data-parallax='{"y": -40}'>
+                                        <h1>Portfolio</h1>
+                                        <p>There’s whole new dimension of advertising that’s taking center stage today, we create exciting, innovative and<br>
+                                            customizable designs for the same.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="l-container">
+                                <div class="b-game-card">
+                                  <div class="b-game-card__cover" style="background-image: url(./img/portfolio/1.jpg);"></div>
+                                </div>
+                                <div class="b-game-card">
+                                  <div class="b-game-card__cover" style="background-image: url(./img/portfolio/2.jpg);"></div>
+                                </div>
+                                <div class="b-game-card">
+                                  <div class="b-game-card__cover" style="background-image: url(./img/portfolio/3.jpg);"></div>
+                                </div>
+                                <div class="b-game-card">
+                                  <div class="b-game-card__cover" style="background-image: url(./img/portfolio/4.jpg);"></div>
+                                </div>
+                                <div class="b-game-card">
+                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/5.jpg);"></div>
+                                  </div>
+                                  <div class="b-game-card">
+                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/6.jpg);"></div>
+                                  </div>
+                                  <div class="b-game-card">
+                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/7.jpg);"></div>
+                                  </div>
+                                  <div class="b-game-card">
+                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/8.jpg);"></div>
+                                  </div>
+                                  <div class="b-game-card">
+                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/9.jpg);"></div>
+                                  </div>
+                                  <div class="b-game-card">
+                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/10.jpg);"></div>
+                                  </div>
+                                  <div class="b-game-card">
+                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/11.jpg);"></div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="rhinoSlider" data-parallax='{"y": -40}'>
+                                <div class="rhinoSlide">
+                                    <div class="headline" data-parallax='{"y": -40}'>
+                                        <div class="button">
+                                            <a href="portfolio.html">
+                                                View more <span><img src="./img/action/arrow.svg" alt=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <!--
                         <div class="wrapper">
                             <div class="rhinoSlider" data-parallax='{"y": -40}'>
                                 <div class="rhinoSlide">
@@ -1583,13 +1764,14 @@
                                 </div>
                             </div>
                         </div>
+                    -->
                     </div>
                 </div>
 
                 
 
                 <div class="section fp-auto-height">
-                    <div class="ourService">
+                    <div class="ourService" style="padding-top:120px;">
                         <div class="wrapper">
                             <div class="headline" data-parallax='{"y": -40}'>
                                 <h2>Our Service</h2>
@@ -1599,19 +1781,18 @@
                                 <div class="item">
                                     <div class="itemContainer">
                                       <a target="_blank" href="#">
-                                        <div class="icon"><img src="./img/service/14.png" width="60" alt=""></div>
-                                        <div class="title">Social Post Design</div>
-                                        <div class="desc">for awareness & business</div>
+                                        <div class="icon"><img src="./img/service/design.png" width="60" alt=""></div>
+                                        <div class="title">Design</div>
+                                        <div class="desc">some tag line</div>
                                       </a>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="itemContainer">
                                       <a target="_blank" href="#">
-                                        <div class="icon"><img src="./img/service/13.png" width="60" alt=""></div>
-                                        <div class="title">T-Shirt Design</div>
-                                        <div class="desc">for event & function
-                                        </div>
+                                        <div class="icon"><img src="./img/service/media marketing.png" width="60" alt=""></div>
+                                        <div class="title">Media Marketing</div>
+                                        <div class="desc">some tag line</div>
                                       </a>
                                     </div>
                                 </div>
@@ -1619,47 +1800,33 @@
                                 <div class="item">
                                     <div class="itemContainer">
                                       <a target="_blank" href="#">
-                                        <div class="icon"><img src="./img/service/10.png" width="70" alt=""></div>
-                                        <div class="title">Poster Design</div>
-                                        <div class="desc">for promoting products & event</div>
+                                        <div class="icon"><img src="./img/service/content writing.png" width="70" alt=""></div>
+                                        <div class="title">Content Writing</div>
+                                        <div class="desc">some tag line</div>
                                       </a>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="itemContainer">
-                                        <div class="icon"><img src="./img/service/1.png" width="70" alt=""></div>
-                                        <div class="title">Logo Design</div>
-                                        <div class="desc">for building advanced shops</div>
+                                        <div class="icon"><img src="./img/service/caricature.png" width="70" alt=""></div>
+                                        <div class="title">Caricature</div>
+                                        <div class="desc">some tag line</div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="itemContainer">
                                       <a target="_blank" href="#">
-                                        <div class="icon"><img src="./img/service/2.png" width="60" alt=""></div>
-                                        <div class="title">Packaging Design</div>
-                                        <div class="desc">for classic products</div>
+                                        <div class="icon"><img src="./img/service/website development.png" width="60" alt=""></div>
+                                        <div class="title">Website Development</div>
+                                        <div class="desc">some tag line</div>
                                       </a>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="itemContainer">
-                                        <div class="icon"><img src="./img/service/4.png" width="60" alt=""></div>
-                                        <div class="title">Caricture Design</div>
-                                        <div class="desc">for personal & event gifts</div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="itemContainer">
-                                        <div class="icon"><img src="./img/service/5.png" width="59" alt=""></div>
-                                        <div class="title">Marketing Product</div>
-                                        <div class="desc">for smarter organization</div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="itemContainer">
-                                        <div class="icon"><img src="./img/service/6.png" width="57" alt=""></div>
-                                        <div class="title">Website</div>
-                                        <div class="desc">for advanced promotion</div>
+                                        <div class="icon"><img src="./img/service/print collateral.png" width="60" alt=""></div>
+                                        <div class="title">Print Collaterals</div>
+                                        <div class="desc">some tag line</div>
                                     </div>
                                 </div>
                             </div>
@@ -1668,67 +1835,24 @@
                 </div>
 
                 <div class="section fp-auto-height">
-                    <div class="whoSection">
+                    <div class="whoSection" style="padding-bottom: 80px;">
+                        <div class="intro" data-parallax='{"y": -40}'>
+                            <div class="particles-text">
+                                <img class="particles-img" src="./img/logo.png" />
+                            </div>
+                            <div id="particles-js"></div>
+                        </div>
                         <div class="wrapper">
 
-                            <div class="intro" data-parallax='{"y": -40}'>
-								<div class="particles-text">
-									<img class="particles-img" src="./img/logo.png" />
-								</div>
-								<div id="particles-js"></div>
-                            </div>
-							
                             <h2 data-parallax='{"y": -20}'>Our Team</h2>
                             <div class="columns">
-                                <div class="leftColumn">
-                                    <div class="rowContainer">
-                                        <div class="count" data-parallax='{"y": -40}'>
-                                            <div>6</div>
-                                            <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                viewBox="0 0 100 150" enable-background="new 0 0 100 150" xml:space="preserve">
-                                                <g>
-                                                    <path class="number6" fill="none" stroke="#8C6A3A" stroke-width="2" stroke-miterlimit="10" d="M3,77.4C3,49.9,7.9,31,17.8,20.8S40.1,5.5,55.1,5.5
-                                                        C61,5.5,66.8,6.3,72.6,8s10.3,3.9,13.4,6.6c2.9,2.6,3.6,5.2,1.9,7.7l-6,9.1c-2,3-4.8,3-8.5,0c-1.8-1.5-4.5-2.7-8-3.8
-                                                        c-3.5-1.1-7.2-1.6-11-1.6c-6.4,0-12.3,3-17.7,9s-8.1,16.2-8.1,30.6h0.4c2.7-4.2,6.6-7.1,11.5-8.9S51.2,54,58.2,54
-                                                        c12.8,0,22.4,4.2,29,12.6C93.7,75,97,85.4,97,97.8c0,13.4-3.8,24.2-11.5,32.2s-19.3,12-35,12c-16.7,0-28.8-5.6-36.3-16.8
-                                                        S3,98.1,3,77.4z M33.1,98.3c0,7.5,1.5,13.2,4.6,17.2c3.1,4,7.5,6,13.4,6c6.2,0,10.9-1.7,13.9-5c3.1-3.4,4.6-9.6,4.6-18.8
-                                                        c0-8.1-1.5-13.9-4.6-17.6s-7.3-5.5-12.8-5.5c-6,0-10.7,2.5-14.1,7.4C34.7,86.9,33.1,92.4,33.1,98.3z"/>
-                                                </g>
-                                           </svg>
-                                        </div>
-                                        <div class="desc">
-                                            Experienced<br>and creative<br>team members
-                                        </div>
-                                    </div>
-                                </div>
+
                                 <div class="centerColumn">
                                     <div class="columnContainer">
                                         We are an experienced team creating great, unique and easy to set up templates for WordPress. We are also creating websites and web applications. In our work we use the latest technologies, and our heads are always full of ideas. Our domain is creativity, experience and openness to new horizons. We hope that our products satisfy you, and fully meet your needs.
                                     </div>
                                 </div>
-                                <div class="rightColumn">
-                                    <div class="rowContainer">
-                                        <div class="desc">
-                                            Years<br>of experience<br>in programming
-                                        </div>
-                                        <div class="count" data-parallax='{"y": -40}'>
-                                            <div>8</div>
-                                            <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                viewBox="0 0 100 150" style="enable-background:new 0 0 100 150;" xml:space="preserve">
-                                                <g>
-                                                    <path class="number8" style="fill:none;stroke:#8C6A3A;stroke-width:2;stroke-miterlimit:10;" d="M2.2,105.1c0-10.6,3.3-18.9,9.8-24.8
-                                                        c6.5-5.9,12.1-9.5,16.8-10.8V69c-5.3-1.7-10.4-5-15.4-9.9C8.5,54.2,6,47.7,6,39.7C6,30,9.9,21.9,17.7,15.4
-                                                        c7.8-6.6,18.5-9.8,32.1-9.8c13.6,0,24.3,3.3,32.1,9.8c7.8,6.6,11.7,14.7,11.7,24.3c0,8-2.5,14.5-7.5,19.4S76.2,67.3,71,69v0.5
-                                                        c4.7,1.3,10.3,4.9,16.8,10.8s9.8,14.2,9.8,24.8c0,11.4-3.7,20.8-11.2,27.9c-7.5,7.2-19.6,10.8-36.5,10.8s-29.1-3.6-36.5-10.8
-                                                        C5.9,125.8,2.2,116.5,2.2,105.1z M30,102.3c0,7,1.5,12.2,4.6,15.6c3.1,3.4,8.2,5.1,15.2,5.1s12.1-1.7,15.2-5.1
-                                                        c3.1-3.4,4.6-8.6,4.6-15.6c0-5.3-1.7-10.2-5.1-14.7c-3.4-4.5-8.3-6.7-14.8-6.7s-11.4,2.2-14.8,6.7C31.7,92.1,30,97,30,102.3z
-                                                         M33.1,42.5c0,4.9,1.4,8.8,4.2,11.7c2.8,2.8,7,4.3,12.6,4.3s9.8-1.4,12.6-4.3c2.8-2.8,4.2-6.7,4.2-11.7c0-4.9-1.5-8.9-4.4-11.8
-                                                        c-2.9-2.9-7.1-4.4-12.4-4.4c-5.3,0-9.4,1.5-12.4,4.4C34.6,33.6,33.1,37.5,33.1,42.5z"/>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div class="team">
                                 <div class="column person1" data-parallax='{"y": 0}'>
@@ -1805,10 +1929,15 @@
                 <div class="section fp-auto-height">
                     <div class="contactSection">
                         <div class="wrapper">
-                            <h2 data-parallax='{"y": -40}'>Get in touch with us</h2>
+                            <h2 data-parallax='{"y": -40}'>Contact Us</h2>
                             <div class="columns">
                                 <div class="column">
-                                    <div class="icon" data-parallax='{"y": -40}'><img src="./img/action/forum.svg" alt=""></div>
+                                    <div style="
+                                        -webkit-filter: grayscale(100%);
+                                        filter: grayscale(100%);">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d497709.3401486628!2d80.235746!3d12.949171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d8b4db1ae57%3A0x284f3e8082885b20!2sRegalia%20Apartment%20MCN%20nagar%20extension!5e0!3m2!1sen!2sus!4v1592920267691!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                    </div>
+                                    <!--<div class="icon" data-parallax='{"y": -40}'><img src="./img/action/forum.svg" alt=""></div>
                                     <div class="title" data-parallax='{"y": -20}'>
                                         <div>Support forum</div>
                                         <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1843,9 +1972,28 @@
                                         <a href="#" target="_blank">
                                             Read more <span><img src="./img/action/arrow.svg" alt=""></span>
                                         </a>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <div class="column">
+                                    <div id="social-test">
+                                        <h2>Address</h2>
+                                        <p style="text-align: center;
+                                        padding-bottom: 25px;
+                                        color: #8C6A3A;
+                                        font-size: 18px;">
+                                            G2, Sabari Flats, MCN Nager Extension,<br>Thoraipakkam,Chennai-600097.
+                                        </p>
+                                        <ul class="social">
+                                            <li><a href="https://www.facebook.com/CreativeAdvertisingAgency/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="https://twitter.com/agency_rhino?s=08" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li><a href="https://www.youtube.com/channel/UCA8qh3zpWzJ9kZjw_u-fZlw" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                            <li><a href="" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/rhinocreative-agency-6861141a8/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        </li>
+                                        </ul>
+                                      </div>
+                                <!--
                                     <div class="icon" data-parallax='{"y": -40}'><img src="./img/action/contact.svg" alt=""></div>
                                     <div class="title" data-parallax='{"y": -20}'>
                                         <div>Contact us</div>
@@ -1897,6 +2045,7 @@
                                             Read more <span><img src="./img/action/arrow.svg" alt=""></span>
                                         </a>
                                     </div>
+                                -->
                                 </div>
                             </div>
                             <br><br>
@@ -1937,7 +2086,7 @@
 	<script type="text/javascript">
 		$(function () {
 			$('#whatsapp').floatingWhatsApp({
-				phone: '+919842842468',
+				phone: '+916385565826',
 				popupMessage: 'Hello, how can we help you?',
 				message: "I like your work, request for call back.",
 				showPopup: true,
@@ -1946,7 +2095,20 @@
 				buttonImage: '<img src="./img/whatsapp.svg" />'
 			});
 		});
-	</script>
+    </script>
+    <script>
+        var animation = bodymovin.loadAnimation({
+        container: document.getElementById('loaderAnime'),
+            
+        // Set your ID to something that you'll associate with the animation you're using //
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './json/loader.json'
+            
+        // Make sure your path has the same filename as your animated     SVG's JSON file //
+        })
+      </script>
     </body>
 
 </html>

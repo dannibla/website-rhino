@@ -779,7 +779,7 @@ a {
   position: absolute;
   left: 0;
   z-index: 0;
-  top: -380px;
+  top: -260px;
 }
 .whySection .leftSvg svg {
   width: 780px;
@@ -838,7 +838,7 @@ a {
   position: absolute;
   top: 0px;
   left: 0px;
-  padding: 20px;
+  padding: 10px;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
@@ -1015,7 +1015,6 @@ a {
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  top: 60px !important;
 }
 .clientsSection .quoteSlider .slick-prev::before {
   display: none !important;
@@ -1037,7 +1036,6 @@ a {
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  top: 60px !important;
 }
 .clientsSection .quoteSlider .slick-next::before {
   display: none !important;
@@ -1050,7 +1048,7 @@ a {
   width: 100%;
 }
 .clientsSection .logoSlider .logoColumn {
-  padding: 100px 0 0 0;
+  padding: 0;
   display: table-cell;
 }
 .clientsSection .logoSlider .logoColumn .logoContainer {
@@ -1100,10 +1098,10 @@ a {
   position: relative;
 }
 .websitesSection .content {
-  position: absolute;
-  top: 360px;
-  padding-left: 160px;
+  position: relative;
+  text-align: center;
   z-index: 10;
+  padding-bottom: 120px;
 }
 .websitesSection .content .number {
   position: relative;
@@ -1247,7 +1245,7 @@ a {
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 .ourService .items .item .itemContainer .title {
   color: #f9b22c;
@@ -2231,7 +2229,7 @@ a {
     padding: 12px 0;
   }
   .whySection .leftSvg {
-    top: -300px;
+    top: -200px;
   }
   .whySection .leftSvg svg {
     width: 620px;
@@ -2267,12 +2265,13 @@ a {
     font-size: 42px;
   }
   .clientsSection .logoSlider .logoColumn {
-    padding: 80px 0 0 0;
+    padding: 0;
   }
+  /*
   .websitesSection .content {
     top: 240px;
     padding-left: 120px;
-  }
+  }*/
   .websitesSection .content .number h2 {
     font-size: 120px;
     line-height: 120px;
@@ -2481,7 +2480,7 @@ a {
     padding-left: 20px;
   }
   .whySection .leftSvg {
-    top: -270px;
+    top: -170px;
   }
   .whySection .leftSvg svg {
     width: 540px;
@@ -2517,7 +2516,7 @@ a {
     font-size: 36px;
   }
   .clientsSection .logoSlider .logoColumn {
-    padding: 60px 0 0 0;
+    padding: 0;
   }
   .clientsSection .logoSlider .logoColumn .logoContainer {
     width: 140px;
@@ -2539,10 +2538,11 @@ a {
     font-size: 16px;
     line-height: 26px;
   }
+  /*
   .websitesSection .content {
     top: 140px;
     padding-left: 90px;
-  }
+  }*/
   .websitesSection .content .number h2 {
     font-size: 90px;
     line-height: 90px;
@@ -2760,7 +2760,7 @@ a {
     padding-left: 20px;
   }
   .whySection .leftSvg {
-    top: -170px;
+    top: -50px;
   }
   .whySection .leftSvg svg {
     width: 440px;
@@ -2807,7 +2807,7 @@ a {
     font-size: 30px;
   }
   .clientsSection .logoSlider .logoColumn {
-    padding: 40px 0 0 0;
+    padding: 0;
   }
   .clientsSection .logoSlider .logoColumn .logoContainer {
     width: 120px;
@@ -2835,11 +2835,11 @@ a {
   .ourService .items .item {
     font-size: 14px;
     width: 33.33%;
-  }
+  }/*
   .websitesSection .content {
     top: 140px;
     padding-left: 60px;
-  }
+  }*/
   .websitesSection .content .number h2 {
     font-size: 72px;
     line-height: 72px;
@@ -3194,7 +3194,7 @@ a {
     font-size: 24px;
   }
   .clientsSection .logoSlider .logoColumn {
-    padding: 50px 0 0 0;
+    padding: 0;
   }
   .clientsSection .logoSlider .logoColumn .logoContainer {
     width: 90px;
@@ -3237,10 +3237,11 @@ a {
   .clientsSection .logoSlider .logoColumn .logoContainer {
     width: auto !important;
   }
+  /*
   .websitesSection .content {
     top: 100px;
     padding-left: 40px;
-  }
+  }*/
   .websitesSection .content .number h2 {
     font-size: 64px;
     line-height: 64px;
@@ -3609,6 +3610,7 @@ a {
     width: 200px;
   }
   .clientsSection {
+    display: none;
     padding: 60px 0 40px 0;
   }
   .clientsSection .headline .headlineMiddle {
@@ -3626,7 +3628,7 @@ a {
     padding: 10px 0 20px 0;
   }
   .clientsSection .logoSlider .logoColumn {
-    padding: 20px 0 0 0;
+    padding: 0;
   }
   .clientsSection .logoSlider .logoColumn .logoContainer {
     width: 140px;
@@ -3650,10 +3652,11 @@ a {
   .websitesSection {
     padding-top: 90px;
   }
+  /*
   .websitesSection .content {
     top: 0px;
     padding-left: 30px;
-  }
+  }*?
   .websitesSection .content .number h2 {
     font-size: 48px;
     line-height: 52px;
@@ -3793,3 +3796,4 @@ iframe.likerhino {
     z-index: 100;
     width: 110px;
 }
+*/
