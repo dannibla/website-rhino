@@ -1065,7 +1065,15 @@ a {
   background: #fff;
   padding:10px;
   border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
+
+.clientsSection .logoSlider .logoColumn .logoContainer img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
 .clientsSection .logoSlider .logoColumn .logoContainer .hover {
   display: none;
 }
@@ -1265,8 +1273,11 @@ a {
 .ourService .items .item .itemContainer:hover .icon img {
   opacity: 1;
 }
-.ourService .items .item .itemContainer:hover .desc {
+.ourService .items .item .itemContainer:hover .title {
   color: #ffffff;
+}
+.ourService .items .item .itemContainer:hover .desc {
+  color: #a2a2a2;
 }
 .whoSection {
   background: #25241E;
@@ -1841,6 +1852,7 @@ a {
   font-size: 50px;
   font-family: 'Istok Web', sans-serif;
   font-weight: 700;
+  padding-bottom:65px;
 }
 .rhinoSlider .rhinoSlide .headline .button {
   padding: 40px 0 0 0;
@@ -3029,6 +3041,18 @@ a {
     top: 40px;
   }
 }
+@media screen and (min-width: 989px) {
+	.clientsSection .logoSlider .logoColumn .logoContainer.zoomNine {
+		transform: scale(0.9);
+	  }
+  .clientsSection .logoSlider .logoColumn .logoContainer.zoomEight {
+    transform: scale(0.8);
+  }
+  .clientsSection .logoSlider .logoColumn .logoContainer.zoomSeven {
+    transform: scale(0.7);
+  }
+}
+  
 @media screen and (max-width: 989px) {
   .wrapper {
     margin: 0 30px;
@@ -3156,7 +3180,7 @@ a {
     padding-left: 13px;
   }
   .whySection .leftSvg {
-    top: -120px;
+    top: 10px;
   }
   .whySection .leftSvg svg {
     width: 300px;
@@ -3228,16 +3252,16 @@ a {
     width: auto !important;
   }
   .clientsSection .logoSlider .logoColumn {
-    display: none !important;
-    width: auto !important;
+    width: 100% !important;
   }
   .clientsSection .logoSlider .logoColumn.current {
     display: block !important;
   }
+    /*
   .clientsSection .logoSlider .logoColumn .logoContainer {
     width: auto !important;
   }
-  /*
+
   .websitesSection .content {
     top: 100px;
     padding-left: 40px;
@@ -3551,7 +3575,7 @@ a {
     display: none;
   }
   .rhinoSlider .rhinoSlide .headline {
-    padding: 100px 0 30px 0 !important;
+    padding: 60px 0 30px 0 !important;
   }
   .rhinoSlider .rhinoSlide .headline h1 br {
     display: none !important;
@@ -3604,13 +3628,12 @@ a {
     padding-left: 40px !important;
   }
   .whySection .leftSvg {
-    top: 120px !important;
+    top: 152px !important;
   }
   .whySection .leftSvg svg {
     width: 200px;
   }
   .clientsSection {
-    display: none;
     padding: 60px 0 40px 0;
   }
   .clientsSection .headline .headlineMiddle {
@@ -3631,7 +3654,7 @@ a {
     padding: 0;
   }
   .clientsSection .logoSlider .logoColumn .logoContainer {
-    width: 140px;
+    width: 180px;
     margin: 0 auto;
   }
   .clientsSection .quoteSlider .quote {

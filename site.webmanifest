@@ -1,6 +1,6 @@
 {
-    "name": "Rhino",
-    "short_name": "Rhino",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,9 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#1d1c16",
-    "background_color": "#1d1c16",
-    "start_url": "http://rhinocreativeagency.com/",
-    "display": "standalone",
-    "orientation": "portrait"
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
 }

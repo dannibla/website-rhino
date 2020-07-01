@@ -10,13 +10,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-        <!--<link rel="manifest" href="./site.webmanifest">
-        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">-->
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#1d1c16">
-        
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+		<link rel="manifest" href="./site.webmanifest">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="./assets/css/bootstrap.css">
         <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
         <link rel="stylesheet" href="./assets/css/bootstrap-reboot.css">
@@ -1025,111 +1023,12 @@
     height: 140px;
 }
 
-
-.l-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  width: 100%;
-  max-width: 1200px;
-  padding: 30px;
-}
-@media screen and (max-width: 760px) {
-  .l-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.b-game-card {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  padding-bottom: 150%;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-}
-.b-game-card__cover {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  background-size: cover;
-  -webkit-perspective-origin: 50% 50%;
-          perspective-origin: 50% 50%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
-  will-change: transform;
-  -webkit-transform: skewX(0.001deg);
-          transform: skewX(0.001deg);
-  -webkit-transition: -webkit-transform .35s ease-in-out;
-  transition: -webkit-transform .35s ease-in-out;
-  transition: transform .35s ease-in-out;
-  transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
-}
-.b-game-card__cover::after {
-  display: block;
-  content: '';
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120%;
-  background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
-  will-change: transform;
-  -webkit-transition: -webkit-transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
-  transition: -webkit-transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
-  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
-  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1), -webkit-transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
-}
-.b-game-card:hover .b-game-card__cover {
-  -webkit-transform: rotateX(7deg) translateY(-6px);
-          transform: rotateX(7deg) translateY(-6px);
-}
-.b-game-card:hover .b-game-card__cover::after {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-.b-game-card::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
-  will-change: opacity;
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
-  -webkit-transform: skewX(0.001deg);
-          transform: skewX(0.001deg);
-  -webkit-transition: opacity .5s ease-in-out, -webkit-transform .35s ease-in-out;
-  transition: opacity .5s ease-in-out, -webkit-transform .35s ease-in-out;
-  transition: transform .35s ease-in-out, opacity .5s ease-in-out;
-  transition: transform .35s ease-in-out, opacity .5s ease-in-out, -webkit-transform .35s ease-in-out;
-}
-.b-game-card:hover::before {
-  opacity: 0.6;
-  -webkit-transform: rotateX(7deg) translateY(-6px) scale(1.05);
-          transform: rotateX(7deg) translateY(-6px) scale(1.05);
-}
-
 #social-test {
   display: block;
   vertical-align: middle;
   text-align: center;
   font-size: 30px;
-  padding: 80px;
+  padding: 80px 80px 0;
 }
 #social-test h2 {
     color: #f9b22c;
@@ -1146,7 +1045,7 @@
   width: 50px;
   height: 50px;
   line-height: 1.4;
-  padding: 1%;
+  padding: 4px;
   border: 1px solid #8C6A3A;
   cursor: pointer;
   margin-left: 10px;
@@ -1172,6 +1071,239 @@
 .social:hover > li:hover {
   opacity: 1;
 }
+
+
+.websitesSection {
+	padding:120px;
+}
+
+@media screen and (max-width: 989px) {
+	.websitesSection  {
+		padding: 0;
+	}	
+}
+
+.iframe-content { 
+	position: relative;
+	padding-bottom: 56.25%!important;
+	padding-top: 25px;
+	padding-left: 25%!important;
+	padding-right: 25%!important;
+	height: 0;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.iframe-content iframe { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-height: 1080px;
+}
+
+
+.gal {
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}	
+
+.gal img{ width: 100%; padding: 7px 0;}
+	
+@media (max-width: 500px) {
+	.gal {
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
+	}
+}
+
+.sliderSection .btn {
+	display: inline-block;
+    position: relative;
+    background: transparent;
+    border: 2px solid #f9b22c;
+    padding: 10px 30px;
+    margin: 30px 20px 0;
+	cursor:pointer;
+    text-align: center;
+    min-width: 100px;
+    font-size: 15px;
+    color: #f9b22c;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.sliderSection .btn.active {
+    background: #f9b22c;
+    color: #1d1c16;
+}
+
+.content-card {
+    padding-top: 160px;
+}
+
+.content-img {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 420px;
+    opacity: 0.1;
+}
+
+.content-img img {
+	width:100%;
+}
+
+.content-card p {
+	padding: 20px 140px;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.card {
+    margin: 2.5rem;
+    min-width: 300px;
+    width: 33.3%;
+    height: 300px;
+    padding: 2.5rem 1rem;
+    background-color: #f9b22c;
+    border-radius: 18px;
+    box-shadow: 0 12px 32px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .2s;
+}
+
+
+@media screen and (max-width: 1289px) {
+	.card {
+		margin: 1.5rem;
+	}
+	.websitesSection {
+		padding: 20px;
+	}
+}
+
+
+@media screen and (max-width: 989px) {
+	.card {
+	    left: 180px;
+		margin: 0.5rem;
+	}
+	.card-container {
+		overflow: auto;
+	}
+}
+
+
+@media screen and (max-width: 599px) {
+	.card {
+		left: 300px;
+		margin: 0.5rem;
+	}
+	.card-container {
+		overflow: auto;
+	}
+	
+	.websitesSection .content .title {
+		padding-bottom: 20px;
+	}
+
+	.content-card {
+		padding-top: 80px;
+	}
+	
+	.content-card p {
+		padding: 20px 10px;
+	}
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.card .title {
+  color: white;
+  margin: 1rem;
+  padding: .5rem 1rem;
+  border-radius: 50px;
+  transition: .2s;
+  cursor: pointer;
+}
+.card .title--legendary {
+  background-color: #f4d03f;
+}
+.card .title--legendary:hover {
+  box-shadow: 0 0 12px rgba(244, 208, 63, 0.8);
+}
+
+.card .title--common {
+  background-color: #2ecc71;
+}
+.card .title--common:hover {
+  box-shadow: 0 0 12px rgba(46, 204, 113, 0.8);
+}
+
+.card .desc {
+    text-align: center;
+    padding-top: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+.card h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 0;
+    color: #333;
+    margin-bottom: .5rem;
+}
+
+.card svg {
+	height: 62px;
+}
+.card .actions {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card .actions button {
+  padding: .5rem .8rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  outline: 0;
+  transition: background-color .4s, color .4s, transform .1s;
+}
+.card .actions button:hover {
+  color: white;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+}
+.card .actions button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+.card .actions__like:hover {
+  background-color: #00b16a;
+}
+.card .actions__trade:hover {
+  background-color: #3498db;
+}
+.card .actions__cancel:hover {
+  background-color: #c0392b;
+}
+
+
 
 		</style>
     </head>
@@ -1254,112 +1386,45 @@
                     </div>
                 </div>
             </div>
-            <div class="scrollDown">
-                <a>
-                    <span class="img"><img src="./img/action/scrollDown.svg" alt=""></span>
-                    <span>Scroll down</span>
-                </a>
-            </div>
-            <div class="scrollUp">
-                <a>
-                    <span class="img"><img src="./img/action/scrollDown.svg" alt=""></span>
-                    <span>Scroll up</span>
-                </a>
-            </div>
         </div>
 
         <div class="rhino">
             <div id="fullpage">
 
 				<div class="section fp-auto-height">
-                    <div class="websitesSection" style="padding-top:120px;">
-					
-							<div class="rhino__intro">
-								  <div class="rhino__intro__center">
-									<div class="rhino__intro__lines" aria-hidden="true">
-									  <img alt="Lines" class="layer" src="./img/intro/lines.svg">
-									</div>
-									<div class="keyvisual">
-									  <svg aria-labelledby="keyvisual-title" role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1100 1100">
-										<title id="keyvisual-title" lang="en">A hand with an outstretched index finger and pinkie finger.</title>
-										<defs>
-										  <linearGradient id="rotate-gradient" x1="13.1056%" x2="86.8944%" y1="0%" y2="100%">
-											<stop offset="0%" stop-color="#00FDCF"></stop>
-											<stop offset="100%" stop-color="#0000FF"></stop>
-											<animate attributeName="x1" values="0%;    0%;    50%;   100%;  100%;  100%;  50%;   0%;    0%" dur="8s" repeatCount="indefinite"></animate>
-											<animate attributeName="x2" values="100%;  100%;  50%;   0%;    0%;    0%;    50%;   100%;  100%" dur="8s" repeatCount="indefinite"></animate>
-											<animate attributeName="y1" values="50%;   0%;    0%;    0%;    50%;   100%;  100%;  100%;  50%" dur="8s" repeatCount="indefinite"></animate>
-											<animate attributeName="y2" values="50%;   100%;  100%;  100%;  50%;   0%;    0%;    0%;    50%" dur="8s" repeatCount="indefinite"></animate>
-										  </linearGradient>
-										  <linearGradient id="pride-gradient" x1="0%" x2="0%" y1="0%" y2="100%">
-											<stop offset="0%" stop-color="#E70000"></stop>
-											<stop offset="16%" stop-color="#E70000"></stop>
-											<stop offset="16%" stop-color="#ff8c00"></stop>
-											<stop offset="32%" stop-color="#ff8c00"></stop>
-											<stop offset="32%" stop-color="#ffed00"></stop>
-											<stop offset="48%" stop-color="#ffed00"></stop>
-											<stop offset="48%" stop-color="#008026"></stop>
-											<stop offset="65%" stop-color="#008026"></stop>
-											<stop offset="65%" stop-color="#004dff"></stop>
-											<stop offset="82%" stop-color="#004dff"></stop>
-											<stop offset="82%" stop-color="#750787"></stop>
-											<stop offset="100%" stop-color="#750787"></stop>
-										  </linearGradient>
-										  <mask id="mask-hand" fill="#fff">
-											<path id="hand-outline" d="M812 4c11-2 20-1 28 3s17 9 20 16c2 4 3 18 3 41 0 40-3 44-10 68l-19 70a242 242 0 0 1-29 76 935 935 0 0 0-51 154c-2 8-6 48-5 53 2 5-4 53-7 72-3 12-21 97-23 115-4 37-10 60-19 81-4 8-23 64-23 69-3 21-3 58 1 91a2763 2763 0 0 1 6 66c-3 3-17 6-36 7-16 1-147 19-155 15-46-6-70-10-72-13-2-4-16-8-19-10a1068 1068 0 0 0-5-98l-1-16c0-5-23-40-24-43l-33-96-10-40a1861 1861 0 0 1 8-274c0-4-8-43-10-47-1-5-14-40-15-51-2-18-5-35-12-66-8-31-8-33-9-50-2-21-3-53-2-53 1-1 13-24 23-29 5-2 23-3 28-1 15 7 23 21 32 58 4 15 5 20 8 47 2 23 9 47 20 74a1601 1601 0 0 1 24 87c3 2 4 2 6-3 2-2 2-5 2-14 0-14 1-33 4-43 4-15 16-32 27-37 17-8 38-8 52 0l8-3 16-23c4-5 49-14 54-13 15 4 31 17 37 30 2 4 15 41 16 53s3 17 6 17 8-4 11-9c6-7 16-26 17-30 0-3 77-180 81-197l17-60c3-7 13-30 17-35 5-6 10-9 17-9z"></path>
-										  </mask>
-										  <mask id="mask-border" fill="#fff">
-											<rect width="188" height="71" x="258" y="152"></rect>
-										  </mask>
-										  <filter id="shadow" width="117.9%" height="124.1%" x="-13.5%" y="-10.8%" filterUnits="objectBoundingBox">
-											<feOffset dx="-20" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-											<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"></feGaussianBlur>
-											<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0"></feColorMatrix>
-										  </filter>
-										</defs>
-
-										<g fill="none" fill-rule="evenodd">
-										  <path class="keyvisual-border" fill="url(#pride-gradient)" d="M182 175h736v743H182V175zm19 19v705h698V194H201z"></path>
-										  <image class="hand-shadow" filter="url(#shadow)" xlink:href="./img/intro/hand-small.png" x="284" width="572" height="1100"></image>
-										  <image class="hand-base" xlink:href="./img/intro/hand-small.png" x="284" width="572" height="1100"></image>
-										  <image class="hand-glitch" xlink:href="./img/intro/hand-small.png" x="274" width="572" height="1100"></image>
-										  <image class="hand-glitch-2" xlink:href="./img/intro/hand-small.png" x="260" y="-5" width="572" height="1100"></image>
-										  <rect class="glitch-line" width="1100" height="1100" fill="#E1FF00" mask="url(#mask-hand)"></rect>
-										  <path class="keyvisual-border" mask="url(#mask-border)" fill="url(#pride-gradient)" d="M182 175h736v743H182V175zm19 19v705h698V194H201z"></path>
-										</g>
-									  </svg>
-									</div>
-
-									<div class="rhino__intro-type">
-									  <div class="rhino__intro-type__slogan">
-										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1510 674"><g fill="#fff" fill-rule="evenodd"><path d="m216 229-1 1zm-5 4 3-1zm-10-4 2 1zm-5 0v2c0-1 2-2 0-2m-5-2-1-1c1-1 1 1 1 1m-26-4c0-1 3-2 5-1 1 1-3 2-5 1m-3 1-2 2c1 0 3 0 2-2m-105 202h1v-2l-1 1zm-1 16-1-1v1zm-3 8c3-1 2-4 2-7l-2 1zm-1 22 1 1c1-1 0-1-1-1m-1-28c-2 0 0-5 1-5zm-1 3v-1zm0 31c-1-2 0-3 1-4 0 1 1 4-1 4m0-22-2 9c-2-2 1-6 1-9zm-2 21-1-1c2-1 1 1 1 1m-1 4-1-1zm5-12c-3-1 0 6-4 5l5-23c-1 1-1 4-3 3l2-2c-2-9 4-14 4-20l-3 4c-2-3 2-6-1-9 4-1 4-6 5-8l-1-4v-4l2-3c-1-6 2-9 2-14 5-10 5-23 10-33 0-7 1-13 4-18l-1-3c5-9 5-22 10-30 0-8 3-15 4-23 4-3 3-9 5-14-4 1-9 2-11 1-5 5-10 3-15 6l-1-1-1 2c-6 2-12 1-17 5-11-1-21 6-33 7l-5-4c-3-6-6-13-6-19l-2-2-1-6c1-3 2-7 5-9l6-1c12 6 29-1 42-3 25-7 48-16 72-19 5-4 7-3 12-4l11-2c2-2 2 0 4-1v2c2 0 1-3 2-1 1-2 1-2 3-2v3c2-2 4-1 5-4 1 0 0 3 2 4l8-1c1 0 0 2 3 2 0 0 0 3 1 2v-3l3-1h6v3l3-1-1-2 2 3h-2c1 2 2 2 4 1s0-4 2-4v3l3 1v-3c2-1 1 2 1 3 2-2 6 1 8 0 1 2-1 1-1 2 1 1 1-2 3-1 2 0-1-1 0-1l4-1c1 2 1 4 2 3v-2c1 3 3 4 3 7l-5 2 1 4c-2 0-1-3-3-3-2 7-15 3-19 8-1 1-1-1-2-2-7 6-18 4-26 9l-2-2c-1 0-2 1-1 2-4 1-5 0-7 3-2-2-9 0-12 2-4-2-8 3-13 3-3 11-4 23-8 34l1 3c-4 11-6 24-9 36l-1 2v2c-1 4-4 8-3 14-4 11-7 23-9 35-3 5-2 12-6 16l-1 5c-2 16-8 29-11 44l-3 3c1 3 1 4-1 5 1 8-5 11-4 19l-4 4c0 1 3 1 1 2l-1-1-2 12c-3 5-7 9-9 16h-2l-2-5c-2 0-1 2-4 2 1-3 2-5 0-9 1-5 3-10 2-15 2-3 3-8 0-11z"></path><path d="m294 362 1-1zm-5-1 1-1zm-7-6-2 1zm-31-61c-1 0 0 0 0 0zm-13 92v1h-1v-1zm-6 2v-1h-1zm-9 2-1-1v1zm-6 2v-1h-1v1zm-26 13c-1 0-1 0 0 0v1h-5c-4 4-12 3-17 6l1 2-14 1c-7-6-12-16-18-23 0-5 4-6 7-10 8 1 15 0 20-2-1-1-3-3-3-5h-1c1-2-2-4-2-7v1c-5-13 2-25 5-36-3-2-1-5-3-7 2 0 0-2 1-3 4 0 5-3 8-4 3-4 6-8 7-14 3-5 6-10 8-17-5-4-5-9-8-15l1-3c1-13 16-18 24-22 14-8 28-12 44-17 14-4 31-9 46-7 4-1 10-2 12 2 1 1 0-2 1-1 2 1 5 3 8 3 6 8 11 12 15 22-3 8-10 13-17 14-1-2-3-3-5-1-2-2-4-6-3-11-25-2-51 9-71 16l-10 3 4 7c-5 8-12 15-14 25 2-1 2-3 4-1l2-3c6 2 16-4 20-2 2-4 7-1 10-3l-1 1v1c9 1 19-3 24 6l-1 2 3 1c0 2-2 0-1 1 0 1-1 3-3 2 1 2 2 1 4 1 0 1-2 2 1 1-2 3-6 3-7 6-26 9-51 17-76 31-3 8-6 16-6 25-2 1-1 2-3 2l55-14 47-6c2 4 5 3 9 2 0 3 1 1 3 1v1c-1 2-2 3-4 2-1 1 1 2 1 3h-4v3l-15 5c-2 6-10 3-14 6h-1v2c-1 1-1-1-2-1v2c-3-2-7 0-8 2-1 1-1-1-2-1h-3c0 3 3 0 3 2-3 1-8 1-8 4v-2c-2 0-3 0-3 2l-3-1c0 2 2 1 1 3l-4 1-2-2v4l-3-3v3c-4-2-4 2-9 3l-1-3c-2 2 0 3-2 5-3 0-7 1-10 4-1-1-4-1-3 1-1 0-1-2-2-1v2c-4 0-6 0-7 2zm236-87v-1h-1v1zm-9 24c0-1 0-2-1-1v1zm-58-132 1 1h-1zm67 118h-1c-1 3-2 5-1 8-1 1-1-1-2-2-2 2 2 3 1 3l-3-1v5l-1-1v2c1 1 2 1 1-1h2l-15 24 1 3h-3l1 3c0 2-1 1-2 0 1 4-4 5-4 9l-1 1c-8 14-22 23-36 30-8 2-13 3-21 2-6-5-15-4-19-11-4-1-9-3-12-9 0 0 1 2-1 2l-3-10c-1-4-1-9-3-13v-10-7c-1-4 2-5 0-9 4-37 16-67 29-97 4-5 6-12 11-17l1-4 12-14c6-7 15-11 20-18 3 0 7-2 8-4l18-3 27 15c6 18 3 33 4 47-1 3-2 7-6 8-4-1-7 0-12-2-1-1-2-1-2-3-4 0-7-2-9-7l-4-1c2-9 2-19 2-29l-2-4c-16 10-24 25-34 38l-1 4-6 7-13 38-2 10-2 4c-3 14-5 26-5 41v8c0 3 0 9 2 13l2 8c15-6 22-18 32-29 5-8 13-14 17-24 7-8 13-17 18-27h1c4-8 8-16 14-22l1-5 3 1v3c1 2 3 0 3 2 1 2 0 0-1 0l1 4c-1 1-1-1-3-1l3 3c1-1 0-2 2-2v14c0 2-1 4-2 3 1 4-3 4-1 7l-1-1 2 2-2 1c2 3-2 3 0 7h-2c1 2 0 4-2 5 0 2 3 4 0 4v-1zm214-96-2 1v-1zm-2 1 1 1a359 359 0 0 0 -1 0l-1-1 1-1zm-3-11h2zm0-2c-1 0-2 0-2-2zm-1 5-1-1h-1l1 1zm-2-6c0 2-4 0-6 1 2-2 4-1 6-1zm-6 12h-1zm-1-12-1 1zm0 4c0-2-2-2-2 0zm-2 7c1-1 0-1-1-1v1zm3 6c0-3-5-4-4-1 2-2 2 1 4 1zm-6-5c0 2 2 2 2 1zm-1 2c1 1 1 4 2 2 0 0-1-3-2-2zm1 7h-1zm-2-5-1-1h-1l1 1zm-4-12 1-1zm3 17c1 1-1 0-2 1zm-4-7c1 2 5 0 4 0zm-1-15v-1h1v1zm0 18c0 2 4 1 4 0zm-3-17 2 1zm-1 1-2-1a433 433 0 0 0 2 1zm-2 18c0 2 2 0 1-1zm0-19-2-1 1 1zm-2 16 2-1zm-1-15 1-1zm-1 15s1 0 0 0zm-5-13v-1zm1-5s-3 0-2 1zm-1 25c2 1 6 0 7-1-2-1-5 0-7 1zm0 1c-1-2-5-1-5 0zm-8-22h1zm-3 17 1-1zm-1 6c0 2 4 0 4 0zm-1 1v-1h-1zm-2-24v-1h-1v1zm1 25c0-2-2-2-2-1zm-4 1 1-1v-1h-1zm-4 0c1 0 3 0 2-1zm-2 1 1-1zm-17-52v-1zm-1 2 1-1zm-1 5v-1h-1v1zm-2 2 1-1zm-1 4 1-1zm-16 147c1-1-1-2 0 0-1 0 0 1 0 0zm-7-93h-2v1c1 0 3 0 2-1zm-1 116 1-1zm-16-110-3 1c2 1 2 1 3-1zm-4 2c0-2-2-1-3 0zm-10 2c1 1 1 2 2 1zm-19-41v1c2 1 1-2 0-1zm-2 5-1-1zm-7 93v2c2 1 1-2 0-2zm123-115c3 2 8-1 12 0 0 2-4 1-5 2 2 1 3-1 4 1 2-1 2-1 2-3h2c1 1-1 0-1 1v1c2 0 5-2 5 1h-2l4 2v-2c2 1 3 0 2-2l3 2c-1 1-3 0-3 2l-3 1c1 2 4 0 5 1 0-2-2-1-1-3h5c1 1-1 1-1 2l1 1c3-2 7 0 9 1l1-1c1-1 2 2 2 0l3 1c1 0 2 0 1-1h1c0 2 2 0 2 2h-5c2 3 7 0 8 3l-5 1h1c0 2-2 0-2-1v2c-1 0-5 0-5 2-2-1-4 1-7-1-1 0 0 3-2 1 1 4 7-1 8 3 0-3 3-2 5-2v3c-1-1-8-1-9 2l-23 3c3 2 6 0 10 0-12 4-28 6-43 9-5 17-13 31-16 48-3 1-1 8-5 10l1 2c-2 0-3 6-2 9-3 2-4 7-3 9-7 12-7 28-13 40 0 0 2 1 0 2s1-2-1-2v11c-2 1-3 3-2 6-2 2-1 4-1 7h-2l1 2s-3-3-3 0c-1-1-2-4-5-3l-1-2c-1 0 0 2-2 1v-1c-4-3-8-6-12-12-1 0 1 2-1 2-4-8-2-15-1-23 4-31 16-63 25-90-2-1-3 2-4 1-1-2 2-1 2-2-2-1-4 2-7 1 1 2 3 1 4 1-2 2-7 4-10 1l-2 1c1 3 2 0 3 0 1 5-8 4-9 4-2 1-2 0-3-1 0 2 2 1 1 3-3 2-6 2-9 0l2 1-4 1v2l-1-1c-5 9-9 18-11 29-1 2 1 6-3 6 2 5 1 7-2 9 2 4 0 6 0 9-2-2-2 3-3 4-1 0-2-2-3 0-1-3-4-2-5-6-2 2-6-4-6-6h-2c-1-2 0-4-3-5-3-11-1-19 1-27l-2-1c-3-3-3-6-7-8v-2c-3-2-4-8-6-11 2-1 1 2 2 1-1-2 3-3 2-5 3-1 5 0 5-4 7-1 13-6 18-7 4-6 6-12 9-19 2 0 0 1 1 1 2-2-1-2 0-4 1-1 1 1 1 2l3-7-2-1c1-10 8-16 11-26l1 1c2 0 1-2 3-2 7 3 14 5 18 12l-8 27c10-2 25-9 38-13 2-2 3-4 3-8 1 0 1 1 2-1 4-6 6-14 9-21l-1-3h1l1-11c4-1 6-6 6-11 3 0 3-2 3-5l8-6c1-1 1 1 2 1 3-1 4 1 8 1 3 4 9 5 12 9-5 14-7 32-13 46l2 1 5-1 2 2v-2z"></path><path d="m775 121c0 2-2 3-1 5 1-1 3-4 1-5m-2-7 1 1h-1zm0 2-1 2c0-1-1-2 1-2m-2 11v-1h-1v1zm-1 9 1 2s1-2-1-2m0 4-1 2c2 0 2 0 1-2m-1 3-1 1c1 0 2 0 1-1m-4-14v-1h-1v1zm-3 4 1 2s1-2-1-2m1 32v-1h-1v1zm-2-37v1l-1-1zm1 38v3c2 1 1-3 0-3m-4-24 1 2zm0 36 1 2zm-1-41-1 3c2 0 1-2 1-3m1 47v-1h-1v1zm-3-42h1l-1-2-1 1zm-2 2c2 0 2 3 0 3zm3 47-1 2c0-1 2-1 1-2m-5-49c0-2 2-2 1-4 2 0 1 3-1 4m3 54-1 3c2-1 2-2 1-3m-4-50c1-1 0-3 2-3 0 1 0 2-2 3m-1 1 2 1-1 1zm-1-4v-2c1 0 2 2 0 2m-3 7c-2 0 0-2 0-2zm0 14v-1h-1v1zm3 57-1 3c2 0 2-3 1-3m-4 5 1 3c1 0 1-3-1-3m-4-59v-1h-1v1zm3 79-1-1h-1l1 1zm-1-4a1100 1100 0 0 0 0 0m-6-75c-1-1 0-3 1-3 1 2-1 2-1 3m5 80v-1l-1 1v1zm0 6v-4h-2c2 1 1 3 2 4m-3 1 1-1v-1h-1zm-4-81h-1zm6 87c-1 1 0 3-2 3v-2zm-6-85-1 1zm-1 7v2zm3 85c2 0 1-2 0-2zm0-1-1-1h-1l1 1zm-5-82v-1h-1v1zm3 94h-1v1zm-9-74c-1-1-2 2 0 1zm-2 4 1 2c1 0 1-2-1-2m0 4v-1h-1v1zm4 90-1-2v1zm-1 9-2-1c1 0 2-1 2 1m-4 5 2-1zm1 4c-1 0-2-2-1-3zm-3-1c2 0 1 3 1 4h-2v-1c2 0 1-2 1-3m-4 8-1-2v2zm56-206 4-4c2 6 0 11-3 16v-2c-3 1 0 2 0 4l-3 13 1 1c-5 3-4 14-7 19 2 1 0-2 2-2 1 2-1 3-1 4h-2c0 2 2 1 2 2v2l-1-2-2 2c2 1 1 4 1 6-2 0 0-2-1-3-3 2 3 6-1 7l-1-2c0 2 0 4-2 6 2 1 2 3 0 4v-2l-1 2 2 2c0 1 0 3-2 3v-3c-2 4-3 10-2 14h-2l1 4c-2 1 0-1-1-1-2 1 0 6-3 7 1 4-1 7-1 10-1-1 1-2-1-3-3 2 3 6-2 8 0-2 2-2 0-4 0 1 0 3-2 1l3 4-4 2 1-2c-2 0-1 2-2 3 2 1 4-1 4-2 1 2-1 6-2 8v-4c0-1-2 2-1-1-2 3 2 7 0 10h-1v6h-1c-2 1-1 3-1 5l-1-1-1 3h-1c-1-1 1-1 1-2-2 0-2 3-1 2v3l2 1c-1 1-2 1-1 4l-2-2c-1 1 1 3 1 4-2 1-2-1-3-1-1 1 2 1 1 3-1 0 0 3-2 2 4 3-2 6-1 9 0 1-2 0-2 2v1l2-1c0 2-2 2-2 3l1 1h-2l2 4c-1 1-1-1-3-1v5h-2l2 2c1 3-2 4-2 7-2-1-2 1-2 3l-1 1 1 3c-3-1-4 4-5 8v-1l-1 2c-2-1-3 3-1 3 0 3-3 4-5 3v2c-4 2-8 2-12 1-2 0-2 2-5 2-1-1-3 0-5-2l-1 1c-8 0-10-7-13-14-7-31-11-77-19-105-2 0-3 2-2 4h-2c1 2 1 4-1 5l1 2c-7 12-8 29-14 42 0 7-3 16-5 22 0 5-1 9-3 13 1 2 0 6-2 7 1 8-3 13-3 20l-2 1c1 5-1 8-3 11l-7 1c-3-3-9-4-14-7 3-5 0-11 1-14l-2-1c1-21 8-36 10-56 6-17 8-38 16-54 0-3 2-3 1-6 4-2 3-7 5-10 4-2 5-5 7-7 4-1 7-5 12-5h14c2-2 5-1 7-2 3 4 7 6 8 11l1 1 1 3c-1 2 1 4 3 6l-2 1c3 1 3 5 3 7l2 2c-1 7 3 13 4 17 2 11 0 19 4 27 1 2 0 1-1 2 1 2 2 4 0 6l2-1 4 30a261 261 0 0 0 9-35c2-9 6-17 7-28h2c-1-9 4-18 5-27l2-1 1 1-1-1-1-1 3-1c-1-2-2-6 0-7v4c2-1 1-4 2-6l1 2 1-2-2-4v3c-3-3 0-7 1-10l1 1c1-1 2-2 1-3 2 3 4-2 4 1v-3h-1l1-7c3-2 4-5 3-9l2 1c1-2 0-5 3-6l-1 3c4-2 1-8 4-10v3l1 1c2-1 0-3 2-2v1c4-5 5-13 7-19v5c2 0 0-3 1-2h1c1 2-1 4 1 6 1-2 2-5 1-8 1-5 6-6 7-11l1 2v-5l1 4c2 0-1-4 2-4zm55 180 1-1zm0 0-1 1zm-4 2-1 1c1 0 2 0 1-1m-4 3v-1h-1v1zm26-89c6-13 18-34 11-53l-2-1c-9-5-18-4-28-2-20 27-33 63-35 102l-1 1c2 7 0 16 3 24 14-7 22-19 31-29 7-14 16-27 21-42m-64-34 8-16h2c1 0-2-2-1-3l1 2 1-2c3-2-1-3 1-4l1 1-1 1 1-1c10-13 15-31 36-34 7 2 15 7 22 11 1 6-4 5-6 8l6 2 1 1 12 4c9 4 19 13 22 23 7 23-10 47-16 65h-1c-1 7-7 12-8 19-2-1-1 1-2 1-4 10-12 17-17 26-3-1-3 7-6 6l-1 3-1-2c-1 2-1 3-4 4v2c-4 3-7 6-13 8l-1-2c-1 1 1 3 1 4l-2-1c-2 0-1 2-2 3v-2c-2 0-1 2-2 3h-2c-2 0 0-2-1-2s0 2-2 2c-7 1-12-1-17-5l-2 1c-2-3-4-6-8-6l-14-13c-4-11-5-22-4-32v-11c2-10 3-21 7-28 0-6 3-9 3-14h2c-1-4 3-8 3-13 1 1 2 0 2-1l-1-3h2c-1-2 0-4 1-5 0 3 2 0 0 0m263 2c0-1 0-2-1-1v1zm-3-7c0-1 1-2 2-1zm-3 1v1h-1v-1zm-3 1 1-2c1 1-1 0-1 2zm-4 1 1 2zm-1 10s-1 2 1 2zm-4-11c0-2 1-1 2-1zm2 4-2 2zm-2 4-1 1c1 0 2 0 1-1zm1 10h-2c1 1-1 2 1 2-1-2 2-1 1-2zm-4-14 3-2zm-2 17c-1 0-3 0-2 2 1-1 4-2 2-2zm0-14-1-3-4 3c2 0 3-2 5 0zm-5 17h-1v2c2 0 2-1 1-2zm-2-15v-1zm1 23 1-2zm-2-28-1 1v-1zm0 22h1zm-3 1c-1 1 1 3 1 1h1v-2l-1 2zm2 6-3 2zm-5-25c0-3 3-2 4-3zm1 4c0 1-2 0-1 2zm0 24-1-1h2c0 2-1 2-1 1zm-2-30h-1l-1-1 1-1zm-1 8v-1zm-3-2c0-2 2-4 5-4zm-2-3c-2 0-1-2 1-3zm1 4-2-1h1c1-1 1 0 1 1zm-1 4v-1h-1v1zm-2-1-3 1zm-2-1-1-1-2 2zm-5 2c0 1-2 1-1 2zm1 29c-1 1-3 2-1 3zm-2-2h-1l1 1zm-3-26 1 3v-3l1-1c-1-1-1 0-1 1zm0 28v-1zm1 5v1h-1v-1zm-1-30-1-1-1 1v2zm6-1 2-2c-4 2-9 5-12 9 5-1 6-6 10-7 1 1 1 0 0 0zm-10 2c1 1-2 1-2 3 2 0 4-2 2-3zm1 28a1274 1274 0 0 1 0 0zm-3-21-1-1v1zm-1-3-1 1zm0 25-1 2zm-4-25c2 3-2 2-1 5 1-1 4-4 1-5zm0 7v-1l-1-1-1 3c1 0 1-2 2-1zm-2-5v-1h-1zm0 3c-1 0-3 0-2 2zm-3 3 1 2zm-1 32 1-1 1-2-1 2zm1-33c-2 0-4 2-4 4zm-3 5-1 1v1zm-1-5c-2 0-2 2-1 2zm0 4c-1-1-5 2-4 4zm-5 38-1 1c1 1 2-4 1-1zm-17-77 1-1zm-1 3c-1 1-3 3-1 3zm-1 4c-1 0-2 0-1 1zm4 86c-1-1-1-2-2-1l1 1zm-7-81 1-1v-2 2s-2 0-1 1zm-1 3-1 3zm-2 7v-1l-1 1v1zm-2 3-1 2zm7 72h-2c0 1-3 2-3 4zm-9-66-1 2v1h-1c-1 2-2 3-1 6h-1c-1 4-4 6-3 10-2 1-2 4-1 4l1-4c1-3 4-6 4-10l2-6v-1h1v-2l1-1a695 695 0 0 0 -1 1zm-10 26v2c-1 2-3 4-3 7 2-2 3-4 3-7v-2l1-1 1-1c-1 0-2 0-1 1zm0 58c-1 0-2-1-2 1zm-3-49c-1 4-4 7-3 11 1-4 4-8 3-11zm-3 53 1-1-1 1c-2 0 0 1 0 0zm-3 1c-1-1-2 1-1 1 0-1 3 0 1-1zm123-111 3 1v2h-3v2c-4 0-8 2-10 5h2l7-5v2l4-3c-10 10-27 18-37 27 1 2 2-2 3-1-1 3-4 3-5 5-2-2 2-2 1-3-2-1-3 4-6 4 0 2 1 3-1 3v-2c-2 0-1 1-1 3l-6 4 2-2c-1-2-3 2-4 2-1 2 1 1 1 3h-2c-2-3-3 2-5 2 2 1 2-2 5-2l-8 8-1-2c-2 0-1 1 0 3l-5 5c-1 0-2-2-2 0 3 2-3 2-2 4h-1l-1 2-2-1c2 2 0 4-3 5 1-2-1-1 0 0l-2 1h1l-2 1v2c-3 0-4 5-6 4-2 2-5 9-8 7l2-1c-1-1-2 0-2 1l-1 1 1 1c-1 3-5 5-8 7l1-1h-2l1 1c0 1 0 3-2 3v-2c-2 0 0 3-1 4-2 0-1-3-2-2v3l-1 1-1-1c0 2-1 4-4 5v-1l1-1c0-1-2 0-1 1v2l-3 1c-7 8-18 8-27 3-2-4-5-5-9-7-1-4-5-4-6-6 5-42 24-76 37-113 1-1 0-2 2-2 7-26 21-48 29-73 2-1 4-3 4-5l6-2 1 2c7 0 12 8 17 12 1 1-1 1-1 2 1 1 1-2 2 0s-1 3-2 4l-10 29-2 2 1 2c-3 2-5 6-5 11h-2c-1 7-4 13-7 18-1 10-7 16-9 26-8 16-14 36-21 54 4-2 8-7 11-10a855 855 0 0 1 66-53c1 1 1-1 2-1 1 2-2 2-2 5-1 0-1-2-2-1s2 1 2 2l3-1-1 2c4-1 6-3 8-5 1-1 0 2 2 1-1-2 2-4 4-4 0 1-2 1 0 3l1-4c1 1 2 0 2-1h-1c3-2 7-1 8-5 1 2 0 3-1 4 1 0 2 0 1 2 4-2 7-5 11-6v2c1-1 2-3 4-2-2 4-8 3-8 8 2 0 5-7 9-4 1-1 0-3 3-3v2l10-4c0 2-3 2-2 5-2 0-1-1-1-1-1 0-2 2-3 1-2 0 0 1 1 1l-3 1c-2 0 1 2-1 2-1-2-3-2-5-1z"></path><path d="m1105 118v-1h-1v1zm-32 22-6-3c-10 18-16 39-19 61-2 7-4 14-4 22v8c1 6 0 15 3 22 11-3 16-10 23-16 15-16 25-35 36-54 9-20 21-40 22-65l-1-4c-12 0-19 6-27 12-11 1-17 15-27 17m30-49c24-5 38 8 51 22 7 19-1 30-3 44l-2 2c-8 22-19 39-29 59-5 4-8 9-10 15-2 2-5 4-6 7-2 0-1 2-2 2-2 6-9 7-9 12-8 8-17 15-28 18-12 3-23-2-33-7-5-5-11-11-14-19l-2-7c-1-16-1-33 3-47 7-35 17-66 38-90 3-2 7-6 12-5 4 5 10 3 14 7 5-5 14-8 20-13m171 60c-1-2-3-2-2 0zm-19-113 1-1zm4 114v-1l-1 1zm-1 0-2 2c0-1 2 0 2-2zm-3 5-1-1-1-1zm1 71 1-1zm-12-188c-1 0-2 0-1 2 0-1 2-1 1-2zm4 114c-1 0-2 1-1 2 0-1 2 0 1-2zm-2 1c-2 1-3 0-2 2 1 0 3 0 2-2zm-9-112 3-2v1zm-2 1 2-1c1 1-1 1-2 1zm-2 3c-2 0-1-2 0-2zm-2 0v1l-1 1-1-1 1-1zm-14 19 1-1zm-1 1s0-1 0 0c-1 1 0 1 0 0zm-7 9-2 2c0-2 2-3 3-5zm-3 4v-2h1c1 1-1 1-1 2zm-2 4 2-2c-2 0-2 2-2 2-1 1 0 1 0 0zm1 3-1 2-2 2-1 1c0 1-2 2 0 3v-3c1 1 1 0 1-1l2-2 1-2 3-4c-2 1-3 2-3 4zm-2-1c-2 1-4 4-3 6zm1 79v-2l-1 1zm-2 1v1h-1v-1zm-11-65v1h-1v-1zm86 50c-4 2-6 3-10 3 1-2 4-1 4-3-2-1-4 2-8 2-2-1-1-1-1-3-1 1-2 1-1 3 0 2 1-1 1 1h-3c1 1 0 2-1 1-6-4-13 6-19 4-1-1 0-1 1-3v2l3-1-4-1-16 6v-2c0 2-2 3-3 3 0-1 2-2 0-3-6 1-9 5-17 6l-1-1c-2 0-1 2-2 2v-2l-3-1v2h-1c1 2 0 2-2 2-6 22-14 44-13 69 30-10 44-32 66-48 9-11 19-20 27-32l-5 2c3-2 7-4 8-8zm-115 11s0 1 0 0zm103 59c-1 2-4 1-3 4-4 0-4 6-8 5v2c-5 2-7 6-11 9v-2c-1 0-2 2 0 2l-1 1c-3 1-4 2-5 4-6 2-11 6-14 10-10 3-25 13-38 7 0 1 0 2-2 2l-1-2c-8-3-15-10-23-15h2c0-2-2-2-3-4-1 0 1 3-1 2l-6-9c-6-33 4-52 11-75v2c1 0 3-3 0-3l3-3c4-17 13-32 20-48l1 1c2-1-1-4 2-5l-1 3c2 0 1-2 2-3h-1l1-2v1l4-3c0-2-2-2-1-3 3-1 3-3 2-5 2 3 1-1 4-1v1c-2 1-3 4-4 6 2 0 3-4 4-6l1-1h-1c1-5 4-11 8-13 2-1 3-2 3-4l3-3h-2c2-3 4-9 9-9v-3c2 0 0 1 1 1 2 0 2-2 4-3l-1-2c1-1 1 1 2 2-7 7-12 15-17 22 5-3 8-12 14-17 2-4 7-6 9-11l10-7c-4 0-8 4-10 7-2 1-4 6-6 2 2 1 1-3 4-4l-1-2 3 1 9-8c1 1 2-2 3-3 4 1 11-5 18-3v-1c4-1 7 3 12 3 2 3 5 4 6 7 3 2 6 3 8 6 1 8-7 19-14 17-2-1-2-3-4-2-1-2-3-2-2-5l-8 3c-21 15-32 35-44 56v2l-10 19v2c-3 4-4 10-6 14 14-6 23-15 38-19 9-6 18-8 29-14 4 1 5-2 9-2l1-2c9-1 21-8 33-11 0 2 2 1 3 2 5 0 6 5 11 5l15 16c-2 3-3 6-6 7l-1 2c-21 25-37 54-62 76v1h-2l-2 3c0-2-2 1 0 0z"></path><path d="m1508 26c-1 0 0-2-2-3 3 1 2-2 2-4 3 2-1 4 0 7zm-3 5 1-2c1 0 1 2-1 2zm-2 8v-1-1c1 0 2 2 0 2zm0 3v-3zm-2-13v-1h-1zm0 15-1 1zm-1-22-1 2c1 1 2-1 1-2zm0 8c-1 0-2 3 0 3zm-1 19v-2c1-1 2 2 0 2zm-1-18c-1-1-2 2 0 1zm1 4-2 2c2-1 3-1 2-2zm-2 4 1-1zm1 12v-2c2 0 1 2 0 2zm-2-24 1-1zm1 5-1 1v2zm-2 0c0-1-1 0 0 0 0 1 1 0 0 0zm-1 13h1v-2l-1 1zm-1-5c2 0 2-1 2-2l1-1-1-1v2zm2 5-1 2c-1-1 2 0 1-2zm-5 9 1-1zm-1 2h1v-1h-1zm-1 2 1-1zm1 13-1-1zm-2-12 1 1zm0-8v-1h-1v1zm-1 11v-2zm7-20v-1l-9 18c5-5 6-11 9-17zm-6 21-1-1c0 1-2 1-1 2s1-1 2-1zm-2 4v-1h-1v1zm0-6-1-1-1 3zm-2-2v-1h-1v1zm1 9-1 2zm-2 4h-1v1zm-1-6-2 4c2-1 3-2 2-4zm-2 8c1 2 4 0 4-1zm-1-2s-2 2 0 3c0-1 3-3 0-3zm-5 7 2 2c0-1 0-2-2-2zm-4 3v1c2 1 1-2 0-1zm-3 18h1v-1-1h-1l-1 1zm-1-10v-1h-1v1zm-1 2h-1v1zm0 8c1-1 0-1-1-2v2zm-3-5-1 2c2 1 2-1 1-2zm-2 3-1 2c2 1 3-1 1-2zm-1 5v-1h-1v1zm-8 19 1-1zm1-5v-1h-1v1zm-2 3c-2 1-2 0-3 2 2 0 3-1 3-2zm-3 6h1v-1-1h-1zm-1 0 3 3zm-2 8c2 1 1-1 0-1 1 0 1 0 0 0zm1-7-2 1c2 0 3 0 2-1zm-6 18c2 0 2-2 2-3 1 0-1-2 0 0zm0-10c2 3-2 2-2 5 2 0 5-4 2-5zm-5-44-1-1-1 1zm2 62v-1zm0-2 1-3-2 1zm-2 2v2c2 1 1-2 0-2zm-5-54-1-2-1 1 1 1zm1 52v-1h-1v1zm3 1-1-1h2c-1-3 1-3 1-5-3 3-5 7-6 11zm-8-55c3 0 1-1 1-2v-2l-1 1zm-1 4v-1h-1v1zm3 60 1 1 1-1c-2 0-1-2-3-1v4zm-1 11h-1a4182 4182 0 0 1 1 0zm0-4v-1h-1v1zm-3-66-2-1v3c1 0 0-2 2-2zm2 67h-1v1c1 0 2 0 1-1zm-7-65h1v-1-1h-1zm-1 14 2-3c0 2 0 2-2 3zm3 59c0 2 2 0 1 0zm-3-58h-1v-1zm2 60c0 2 0 4 2 4zm-1-6c2-2 4-5 3-7 0 2-2 2-3 4zm-3-61v-1h-1v1zm6 75-3 2c-1-2 1-2 1-3zm-4-72-1-3-4 3c2-2 2 1 5 0zm-5 5 1-1zm-3 4s-1 0 0 0zm-1-7 1-1zm2 68 1-1zm-2-60v-1l-1 1v1zm6 69c2 0 1-4 4-3-1 2-1 4-3 5l-1-1c-1 1-4 1-3 4l-3 1c2-2 2-6 5-7-1-3 1-4 2-6 2 3-1 4-1 7zm-5 16c-1-3 0-2 1-4 1 1 0 3-1 4zm-3-87c-1 1-2 1-2 3 1-1 2-1 2-3zm1 88c0-1 2-1 2 1zm-4-89-1 2c2 1 2-1 1-2zm5 81-2 1 2-3c2 0-1 1 0 2zm-6-77v-1h-1v1zm4 72c-1 0-3 2-1 3zm-5-68c-1 0-2 1-1 2-1-1 2 0 1-2zm-1 79v-1h-1v1zm0 8v-1h-1v1zm-1 3h-1c2 1-2 2 0 4zm-7-80c-1 1-2 1-1 2zm3 95-1 1v-1zm-1-7v-1h-1zm2 12c-1-1-2-1-2-3 1-1 3 2 2 3zm-1-8c-1-2-3-2-3 0zm-2-4-1-1h-1l1 1zm-1 18c-1-2 0-2 1-2zm-1-17-1 2c1-1 2-1 1-2zm-1 12 1-1zm-1 0-1 2zm-2-4-1 1c1 0 2 0 1-1zm0 22h-1zm-1-10c3 0 2-3 1-4h2c-1-3-3 1-4 2 2 1 1 1 1 2zm-3-94c-2 0-2 1-3 2 2 0 2-1 3-2zm2 87-1 1v1c1-1 2-1 1-2zm-1 8h2l-1-1h-1c1 0 1 0 0 0zm-9-175c-1 0-2 0-2 2zm3 84-1 2c1 0 2-1 1-2zm6 97v-2l-2 1zm-11-178c0 2 2 0 1 0zm2 85 1-1zm-5-76h2v-1h-1-1zm-1 7h1v-1-1h-1zm8 170v-1h-1a5718 5718 0 0 0 1 1zm-1 9 1-1zm-8-173h-1v3zm7 168-1 1zm-10-162c0 1 0 2 1 1zm9 164-1 3c1 0 2-1 1-3zm0 13v1h-1v-1zm-2-15-1 2zm-8-146-1-4h1l-1-1v1c0 1-2 4 1 4zm6 168c1-1 0-3 2-3 0 1 0 2-2 3zm-8-158-1-2v4zm8 151-2 2c2 0 2-1 2-2zm-10-143h-2v2c2 0 2 0 2-2zm6 143-1 2zm0 15c1 2-2 1-1-1zm-4 9 1 1-1 1-1-1zm-3-4-1-1-1 1zm1 6v2l-3-1zm-4 2 1-1c1 1 0 1-1 1zm-3-4-1-2v2zm-1 6c-1 1-1-1-3-1l1 3c1 1 3 0 2-2zm-5 10c2 1 3-2 2-3l2-2-2-1v3c-1 1-2 1-2 3zm-2 2v2c-1 1-1 0-1-2zm-4-6v4c0-1 2-3 0-4zm-4 16h-1zm78-149c3-5 5-11 9-15v-4l1-2s-2 0-1 2c-8 13-16 29-23 45 4 0 3-5 5-7 1 5-3 10-5 14 2 2 2-2 4-1l-3 3-1-1-2 7h1l-3 6 1-3c-3 0 0 2-1 3l-4 1 1 3c-1 0-1-2-2-1l-1-2c1 0 0-1 0 0l-2 4h4c0 2-3 3-1 5h-2v6c-4 2-2 10-8 10l2 1c-3 2-1 9-6 11l3-5c-2-1-1-2-1-4 1-1 2-1 1-2l-1 2c-6 9-7 21-13 30l1-5c-2 1-1 4-3 5l2 4h-2c0-2 2-2 0-2l-2 5c1 1 3 0 2 2-2-1-3 2-5 0l-1-1c1 0 2 0 1-1l-1 1v1l2 2v5c-2-1-4 0-6 1v-2h-2c0 2 2 2 2 3 1 1-3 3 0 4l-2 1v3l-2-1c2 4-2 7-4 10-2-3-1-9 0-13-2-1 0 5-3 5-1 6-3 8-3 13-4-1 1-6 0-8l-1-1c-1 4-1 8-4 9-1-1 0-3-2-4 5-32 18-58 27-87l2-1c4-15 13-28 18-44l1-1c15-33 33-64 49-95l4-6 1-4v-1c-2 2-2 3-1 5l-1 1-1-2c0-1-4-1-3 2 0 1 2-2 2 1h-2c1 1 0 4-1 5-2 0 0-1-1-2v3c-2 1-3 6-5 3 1 1 1 5-3 5v-3c-1 0 0 2-2 1 0-1 2-1 1-3l-2 3c0 2 3 1 3 2l-2 1v2l2-1c-1 2-3 4-5 4 1 2-1 5-3 6v-2c-2 1-1 2-1 3-1 1-1 4-4 3l-1 5c-3 0-1 1-2 2-2 0-1-1-2-2l-3 3h3c-2 1-2 6-7 5v4h-1c-1 1 0 4-2 4v-3h-1l-1 3-2-1c-2 0 0 2-1 3h2c-2 5-5 6-9 10-2 8-12 9-16 15-11-2-20-6-30-11-4-6-1-14-2-20 8-36 14-71 28-102l9-5c8 2 14 10 21 12l-1 6h-4c-5 7-5 16-10 22 3 5-3 7-1 10-3 6-3 14-7 20l1 2c-2 0 0 6-3 4 0 2 2 1 2 3-2 4-3 9-3 15-2 1-2 5-3 9 10-8 18-22 28-32l2-4c2 0 4-3 4-6 6-3 7-11 12-13 6-10 15-17 20-27 6-2 10-9 14-14 8-5 12-13 19-19v-2c9-8 17-16 27-22 4 0 6 4 10 4 3 4 6 4 8 8h1c3 3 4 8 0 10v5h-2c1 2 2 2 1 3l-1-1c-1 2 1 4-2 5l2 1c0 2-1 0-2 0-2 4-2 10-5 11 1 4-2 5-2 8-2-1-3 2-3 5h-2c2 2 0 4-1 7-1-1-1 3-3 3l1 2h-3c4 3-2 3-1 7l-3-1-1 6c-1 1 0-2-2-1 0 2 1 4-2 4-2 1 1 1 0 2-1-1-1 0-1 2l-2 2c0 1 2 1 1 2-4-1-2 5-5 5 0 1 2 0 2 2-2 0-3 2-5 1 1 2 2 2 1 3-1 0 0-2-2-1v3l-4 3h2v2h-3c-1 1 3 2 1 3 0 2-1 0-2 0l1 2c-1 0-3 0-2 1h1l-2 4-4 2c1 1 2 0 2-1 1 2-1 5-3 5 2 2-1 5-3 4v5c-2 0-3 3-3 5-1 1-1 0-2-1 0 3-2 4-3 6l3-1c0 3-2 1-3 3l1 2-5 5 1 3-2-2c-1 3-2 10-6 7-2 1-2 2-2 3l1 1 4-2c-1 1-2 3-4 3l1 2c0 2-3 2-3 4l-1-2c-2 0-3 2-2 3l1-1 2 1c-3 2-3 5-4 8-2 1-2 0-3-1-1 1-1 3-3 2v2h-1zm-1119 369v1h-1v-1zm-3 6-1-2zm-2-2 1-1zm-1 7h-1zm-1-8c2-1 2 0 2 1l-2 1c-1-1 2-1 0-2zm-2-2v-1zm-1 3-1 1zm-5 8h1v-1zm0-4c0-1-1 0 0 0 0 2 1 0 0 0zm0 4h-1l1 1zm-2 0-1 1c1 0 2 0 1-1zm-3 2h-1zm-9 4v-1zm-2 1v-1zm-10 7c1 0-1 1 1 1 0 0 1-2-1-1zm-3-2v-1zm-3 1 1-1zm-2 1c1-1-1-2 0 0zm-4 8v-1h-1v1zm-35-9 1-2zm-1 1 1-1zm18-63c3-7 6-13 7-22-21 11-29 33-31 57 9-11 16-24 24-35zm-13 53-6 9 3 7c21-12 45-24 69-31l15-3v1l-4 2 4-1c-1 2-4 3-5 1-1 1 1 3-1 3l1 2-1-1v2l-1-1c0 1-2 0-1 2 1 1 5-4 7-1-1 0-3 0-2 1h-3c0 2-2 2-4 3v1c2 0 4-2 6-1-3 0-4 3-6 2l-1 2-1-2v2l-1 1v-1c-2 0-2 0-1 2-1-1-2 2-3 0-2 3-5 2-8 5l-1-1c0-1 0 0 0 0h-1v1h-2l1 2-2 1c-1-1 1-1 1-2-3-1-1 2-3 3-1 1-1-1-1-1v2h-1l-1-1c-4 6-13 6-20 12l-6 3-2 2v-1c-1-1-1 0-1 2v-2c-2 0-1 3-2 1v3l-1-2-1 2c-1-2-2 3-3 1l-1 1-1-1-2 3c6 7 12 14 15 24-1 2-4 3-6 3-4 1-6 3-10 3l-2 1c-3-2-7-3-9-8 3-4-3-7-4-11l-16 9c-5 1-9 5-15 6l-12 1-5-3 1-1-8-2-1-3-1 1v-6c10-15 25-28 39-41-1-3-1-8-3-11l1-2c-2-3-1-5-1-9 0-21 6-36 13-51 9-11 15-23 33-26 8 0 13 7 20 8l4 6-1 2c2 16-7 25-11 37-4 4-5 11-10 16l-7 8c1 3-3 4-3 7l-1 2c-1-2-2 1-2 2zm218-129h1zm-55 39h-1zm-10 11 2-2v2zm-15 24v-2l1 1zm-4 28c-2-1 0-2-1-4zm-11 88c2 0 1-1 1-2 1 0-1-2 0 0zm1-23c-1 3-1 6-3 8 0-3 2-5 3-8m-11 20 1 3c1 0 1-3-1-3m-2 0 1-1zm-6 25c0 2 1 1 2 1zm16-32c2-3 2-7 5-10l1 3c-1 0-2 0-1-1l-1 2c3 4-1 8-1 12 2 0 1-4 2-5 1 2 0 3-1 4h2c0 1-1 3-1 1l-3 20 2 1 1-2h5c12-6 32-16 44-27l-2-2v1c-4 1-9-8-12-12h-2c-4-4-2-11-3-17 6-27 16-52 23-78l2-2c2 2 4-1 6-1 7 5 14 8 19 16-6 12-7 26-12 38-3 17-11 31-10 50 13-9 25-22 37-33 19-22 37-44 47-73 5-11 8-29 3-43-12-4-22-2-33 0-4 0-9 3-11 1l-2 3c-11 3-20 9-28 14l-8 7c-11 8-19 17-26 27-6 10-9 21-12 33l1 2c2 0 2 3 4 3-1 5-4 8-8 9-1 0-4-1-3-3-12-4-12-18-9-29-2 0 0 3-2 4-1-6 3-11 2-16h2c-1-1-2-3 0-3v1l1-2 4-6c-2 0-2 4-4 5 3-8 8-15 14-21 0 2-2 1-1 3-4 3-6 7-9 11 3-1 6-7 9-11l3-4 2-2h-1c-1 0-1-2 1-2l-1 1c3 0 2-2 4-2-2-2 1-3 2-5l1 1c1-4 4-7 7-8 0-3 5-3 5-8h4v-2c13-8 22-17 37-22-1-1-3 0-2-2 2 1 2 1 3-1 3 0 7 0 9-2 6 1 11-2 17-2l19 2c2 1 3 3 5 3l11 5c10 7 19 18 25 29 4 15 2 33-4 46l1 3a314 314 0 0 1 -48 74c-14 11-22 23-37 33-3 3-6 8-10 8-7 9-15 13-25 18-7 6-14 10-24 12-1 3-8 2-10 4-12 3-24-1-32-10-2 0-2-1-3-2v-2c-2 0-5-1-7-3 0-3-4-7 0-9v-4l1 1c0-4 4-6 3-11l2-1c-2-4 2-6 3-10v4l1-3c2 1 0 3 0 4 2-1 3-2 1-4 3 0 2-7 5-10 1 3 0 4-1 6 1 1 1-3 2-2z"></path><path d="m710 548h-1v1zm-52-69h-2v2zm-5-7c-1-1 0-2 1-2 1 1 0 1-1 2zm1 2s-1 0 0 0c-2 0 0 2 0 0zm4 100h-1zm-7-101 2-1zm3 102-1-1 1 2zm-5-88h-1v-1zm-4 2c1-3 3-5 6-6 0 2-2 2-3 3-1 2-1 3-3 3zm0 1h-2v-1zm-2 0c-1 3-3 4-5 5 0-2 3-3 5-5zm-7 10 4-5c4 0 8-8 12-9-4 5-10 11-16 14zm-3-8 15-13c-4 5-9 9-15 13zm-1 12c-1-2 2-3 4-4 0 2-3 2-4 4zm10-16c-1 4-6 6-11 9 3-4 7-6 11-9zm-12 10v-1h1c1 1 0 1-1 1zm0 0c0 1 0 1 0 0zm-2 3 1-2c1 1-1 1-1 2zm-1-3c1-3 4-4 6-6zm84 54c-2 1-4 1-5 3l-1-2-1 5c-6 3-11 1-15 4-1 1-1-1-1-1l-1 3c-2 2-2 0-3-1-2-1 0 1-1 2s-3-1-2 1c-1 1-2-1-3-2-2 0 0 3-2 3 1-2-2-2-3-2 0 2 2 0 2 2-1-1-5 3-5-1l-1 3c-3-1 0 1-2 2l-2-4v3c-2-1-2 1-4 1h1c-1 2-2-1-3 0v2c-1 1-1-1-2-1h-1l-1 4-16 7v2c-3-2-8 6-11 2v2c-3 0-6 3-8 4-13 4-21 12-33 15l-3 3-22 11c-7 4-16 7-21 13l-5 1v-1c-1 1-1 2-3 2-4-5-8-12-8-20h1c-3-4 4-4 5-9 0 0-1 2-1 0 26-15 54-32 87-43 0-1 3 0 4-2h2c24-7 63-19 90-17zm-59-75c-1-1-3 1-3 2h-1l7-8v-4c7-6 10-14 13-23h-8-1c-13 3-25 7-38 12-1 1-4 1-5 3-12 4-23 10-33 17-4 2-12 6-15 10l6 8-20 33c1 1 3 0 3-2l42-14c10-3 19-5 28-3l1-2c2 0 0 2 1 2h10l-1 1c4 2 6 1 11 2 0 2 3 4 5 4 1 2 2 6 4 7l2 5c-2 0-1 2-1 3-38 1-74 16-105 31l-1 6c1 2 3-2 2 0-2 1 0 3 1 4-7 8-17 14-28 19v3l-6 2c-3-4-8-4-10-8 0-2-4-6-4-9-4-4-2-11-2-16 7-16 14-31 23-46l-5-2c-3-5-3-10-7-15 0-2 0-5-3-6 1-3 3-5 3-9 37-32 78-57 125-69l3 1c1-2 6-3 8-2l2-1c1-1 1 1 2 1 6-2 11 1 14 0l2 2c13 3 16 21 20 33 1 3-3 5-2 8h-2c-1 5-6 7-9 12-5 1-11 6-15 9-4-1-7 5-12 7 0-2 3-2 2-5-1-1-1 3-4 2l3-3c-5 2-7 7-11 9 0-5 5-6 6-9z"></path><path d="m785 553-2 2c1 0 2 0 2-2m-2 3h-2zm-1-3-6 3c2 0 6-1 6-3m-16 10c2 0 4 0 3-3l-3 3c0 1 0 1 0 0m-3 2v1c1 0 1 2 2 0 2 1 0-1 0 0l-1-1 1-2c-1 1-2 1-1 2zm0 4v-1h-1zm-8 2a450 450 0 0 1 1-2h-1zm-4 7c-2 1-2 1-2-1zm-3-2c1-1 3-1 3-3 1 1 2 0 2-1l-2 1c-1 1-5 2-3 3m-1 4-2 2v-2zm-6-6h1v-1-1h-1zm-3 8c1 1-2 0-1 2 1 0 3-2 1-2m-2 5c1 1-1 2-2 2 0-1 2-1 1-2zm-6 1c-2 0-2 1-3 2 2 0 3 0 3-2m-8 7c-1 0-3 0-3 2zm-5 4v-2zm-2 1-1 1s2 0 1-1m-5-23v-1zm0 22v-1h-1v1zm-3 8 1-1c1 0 2 0 1-1-1 0-2 0-1 1-1 0-2 0-1 1m-2 5 2-2c0 2 0 2-2 2m-1-10 3-1c-2-1-4 0-4 1zm-1 5 1-1zm-1-2v-1h-1zm-1-20h-1v1c1 0 2 0 1-1m-5 3-1 1v1zm-2 22 1 2zm0 9v1h-1l-1-1zm0-10-1-2c0 2-3 3-1 4 1 0 0-3 2-2m-6 11 1-1zm-1-3h2l-1-2-1 1zm0-18v-1h-1v1zm-1 20v-2h-2v4c1 0 0-3 2-2m-5-16-2 1c1 1 2 0 2-1m-3 3 1-1zm1 19 4-1a1015 1015 0 0 0 -1-2c0 1-3 1-3 3m-2 0c0-1-2-1-1 1l1-1c1 3 3-1 0 0m0 2-2 1zm-3-18c1 1 2 0 2-1h-3zm-5 1c1 2 2 2 4 2 0-2-2-2-4-2m0 26h-1v-1zm-2-10c-1 0-2 1-1 2zm-3-1 1-1v-1h-1zm-1 7c1 2 5 1 5-1h-2c1-2 4-3 4-5h-1c0 2-2 3-4 3 1 2 0 3-2 3m1-5-2-2 1 1zm-2 5h-1v1zm-3-9 1-1c1 1 0 1-1 1m1 8h-3l1 3c2-1 1-2 2-3m-3 9-1-2zm-2-2 1-1zm-2-2v-1zm-3-4h-1zm92-50c0 1 0 1 0 0h1c2 1-2 2-3 3-2 1-3-1-5-1 0 2 0 0 1 1s-1 1-1 2c-2 0-1 2-1 3-3-3-5 3-8 1 2 2 0 2 0 4h-1 2l-5 4c0-2-1 0 0 0-1 2-3 1-4 4-2-1 1-2 1-3-2-1-3 4-6 4-1 1 2 1 1 2l-5 1 1 2-2 1-1-1c-1 1-3 1-3 3-2-1-2 1-4 2 0-2 2-2 3-4l2-2c-1-1-2 1-2 2-2 0-3 1-4 3l1 2h-2v1l-2 2c-1 0-1-2-2-1-1 0-3 2-3 4l-7 2c0 1-1 3-4 4l1 2c-2-2-2 2-5 2 0-2 3-1 2-3 2 0 0-1 0 0l-3 2-1-1 1 1 1 1c0 1 0 3-2 2 1-2-1-2-1-5l-3 1v4c-2-2-3 2-4 3-2 0-1-2 0-2l-2 1-1-2-4 4c-1-2 1-2 1-4-1 0-1 2-3 2l-2 1c-2 0 0-1 1-2h-2c2-3 3-7 7-8 1 0 1-1 0 0 0-2 2-3 1-4 4-2 6-7 9-9-1-2-4 3-5 1v2l-1-1v4c-3 0-5 1-7 3 0-1 2-1 1-3-2 2-2 6-5 9-2 0 0-2 0-3-3 2-1 3-2 5h-1c0-2-1 1-2-1 1-3 4-3 3-6 41-46 94-80 149-113 6-2 13-7 19-11-3 0-5-2-7 0-2-3-8 1-11-2-4 2-9 0-14 1l-2-1-11 1c-7-3-14 0-22-2h-2c-5-2-15 1-20-4l-1 1c-10-6-17-18-24-28l-1-7c11-17 31-29 48-40 14-8 27-13 39-18l15-5 7-1h3c5-1 9 2 13 3 9 5 9 15 16 22 0 2 3 5 1 7-2 1-3-2-5-1-15-7-33 3-47 8-21 8-41 20-57 34l17 1 50 1c10-1 22 2 31 1 1 1 4 2 6 1 8 1 13 7 18 14l1 2c3 5 6 7 8 14-13 16-34 23-51 35-11 5-22 13-31 18-2 2-5 1-5 4-2 0-2 2-3 1-8 7-19 11-25 18h-5zm-95 51c-1 0-1 3-3 2l5-5-1 5zm282-222 1-1v2h-1zm-1 5 1 2c1 0 1-2-1-2zm0 7-1 2zm-7 8v-1zm-1 5 1-2zm0 18 1 3zm0-16s1-1 0 0l-1 1v-1zm-1 6-1-1 2 1zm-1 3v-1h1v1zm1 2c-1 1-1 0-1-1zm-1 16v1h1v-1zm-2-8c-1-2 1-5 1-7 3 2 0 5-1 7zm1 15s-1 0 0 0zm-2-8c-1-1 0-5 1-6zm-2 27-1 1h2zm-2-12c1-4 1-9 3-12 1 1-2 6-1 10-1 0 0 2-2 2zm0 18v2l1-2zm0 4v3zm-1 3c0 1-2 3 0 4zm-3-25h-1zm-4-90c-1 0-2 1-2-1zm4 100h-1zm0 28 1-1zm-7-136c-1-3 1-7 1-10 1 3 0 7-1 10zm0 1h-1zm5 124c0-2 1-2 2-3 0 2-1 2-2 3zm1 15v3c2 0 1-1 0-3zm-7-135-1-1c0-2 2 0 1 1 1 2-1 2-1 0zm7 126c-3 2-2-4-1-5 2 0-1 4 1 5zm-1 16v2c0-1 2-2 0-2zm-6-131c0-2 0-5 2-5 1 1-2 3 0 4l-2 1 1 2-2 1-1-2zm-2 5c-1-1 1-1 1-2 2 0 1 2-1 2zm0 6-1-2h1zm5 112 1-7c2 0 2 1 2 2l-2 2 1 1c1 2-1 2-2 2zm-6-108-1-1h1zm-2-3 1-3zm1 15c-2 0-1-3-1-4zm-3-6v-1l1-1v1zm5 112v-1l1-1v1zm3 6c-2-4 1-5 0-9 2 5 0 13-2 17 0-3 0-6 2-8zm-9-100c-1-3 1-6 2-9 2 2-1 6-2 9zm-1 1v-1h1v1zm0 2v-1h1v1zm5 95c0-2 2-1 3 1zm-1 10v-1zm1 1-1 1zm-6-97c-2-2-1-5 1-5 1 2-2 2-1 5zm-1 4 1-1v1zm0-1-1-2 2 1zm5 93h-1zm-6-89v-2zm5 95v-1l1 1zm0 8v-2c1 0 2 3 0 2zm-5-101h-1zm5 107c3-6 3-13 5-19h1c-1 3 0 7-2 9v6c-3 0 0 4-3 4 2 1 1 3 1 5-3 0-2-5-3-8zm-8-110v-1h1v1zm-1 3c0-1 2-1 1-2 2 0 1 2-1 2zm1 1-1 1zm5 103v-2zm-1 4v-2h1v2zm0 4 2-1c0 1 0 2-2 2zm0-1-1-2 2 1zm-1 4c0-2 1 0 3-1 1 2-3 6-4 3 2 1 1 0 3-2zm-2-111 1-2-1 2c1 11-5 17-4 28h-2c2-9 3-19 6-28zm-2 123c0-1 2 0 1-2 1 0 1 3-1 2zm-2 32-1 2c2-1 2-1 1-2zm-7-113v1l1-1zm2-8c-2 1-5 7-2 8v-1l1 1c2-1 1-5 1-8zm0 126 1 3c0-1 2-3-1-3zm-3-116c-1 4-4 7-2 11 3-1 4-9 2-11zm3 105c-1-2 2-1 0 0 1 1-1 0 0 0zm-1 3c1 0-1-2 1-2zm-6-77v-2zm-2 9c0-1-1-8 2-8zm-1 4v-3zm-1 2v-1h1v1zm3 84c0 1-2 0-1 2zm-7-63 1-1zm0-6-2 4c2 0 2-2 2-4zm1 44c-1 1-1-1-1-2zm-2-18-1-1h1l1 1zm1 21-1-2c2 0 2 2 1 2zm-1 13v-1h1v1zm1 1h-1zm-4-53v1h1v-1zm2 39v-1-1l1 1zm-1-10h-1zm1 19h-1zm-2-15-1 1zm0 24 1 1zm63-177c-1-2 1-3 2-2-2-3 0-5 0-9l1 3-1-7h2c-1-2 0-3 2-3-1-2-4-4-1-5l1 2c1-2-1-3-1-5 1-3 1-6 4-7-1-3-2-6 0-8l1 1c0-3 2-7 0-11h2c0-3 2-5 0-7h1c1-2-1-1-1-3h2c1-9 3-18 6-25l-2-7-5-2-8-6h-5l-3-1h-2c-5 0-11 1-14 5v13c-3 7-4 14-5 21 2 0 1-2 2-2 1 3 0 5-1 8l-2-1v7c-3 2-2 8-3 12l-1 2-4 20c-2 4-4 9-4 15l-1 2c0 3-1 5 1 9-3-1-2 2-1 5-3 0-2 2-1 3l-3 1c1 5-1 9-2 13h2c0 2 0 4-3 5l1 5c2 0 1-3 2-5 1 3 2 0 3 1l-3 4 2 1c-6 9-4 23-9 32 0 1 0 5-2 5 0-6 3-10 3-16-1 2-2 0-3 2h2c-3 4-1 11-5 14 1 5 0 9-3 12v4l1 1c-3 4-1 11-3 15 4-2 1-11 5-14 0 7-5 11-2 19-1 2-1 6-4 6 2 10-5 19-3 29-2 0-1 3-1 6-1 4-4 9 0 14l1-5 2-6c0 1 2 1 1 2h-2c1 2 1 3-1 4v8c3 1 1 6 3 7l1-2 1 3c2-1 1-4 2-7l2 2 1-2c1 2-2 5 1 6 1-3 0-10 3-8 2-1 0-5 2-5l1-3-1 3v5c3-4 4-11 4-15 2 2 1-2 3-2l-3-2 4-2c0-1-2-4 1-4l-2 12c2-3 4-7 4-12-3-1-3-5-3-8 3 1 0 7 3 7 1-3-4-7 0-10l-2-1h2c-1-1-2-4 0-4l1 1c-2 1 0 1 0 2 1 3-2 5 0 9l2-9-2-3 2-5h-2l3-4c1 5-1 7-1 11 3-5 2-14 5-19 2 4-1 4 0 8-2 0-1 2-2 2 1 8-3 12-3 19-2 5-3 9-3 15-1 3-3 7-2 11a1403 1403 0 0 0 21-100c-1 0 0 2-2 2 0-2 1-3 2-2 0-2-2-1-1-2 2-1 1 2 3 1 1-2-2-2-1-2 2 1 1-2 2-2v2h1c1-1 0-3-2-4l3-12 1-1 2-12h-3c1 3 1 6-1 7 1 2 1 4-1 3l2-10c1-4 1-9 3-13 1 5-3 9 0 12 1 1 0-3 2-2 1-2-2-5 1-5 0 0 0 3 1 2-3-6-1-7 1-8l-1-1v-2h2c-2-1-3-6 2-6-3-1-2-4-1-6 1 0 1 2 2 1l-1-3s0-1 0 0c3-1-2-6 1-7zm131-4s0 1 0 0zm-1 1h-2zm-19-113h1zm4 115v-1h-1v1zm-1-1-2 2c0-1 3 0 2-2zm-3 5-1-1-1-1c2 0 2 1 2 2zm2 71s1 0 0 0zm-12-188c-2 1-3 1-2 2 1 0 2 0 2-2zm4 114c-2 0-3 2-1 2-1-1 2 0 1-2zm-2 1c-2 1-4 0-3 3 1-1 3-1 3-3zm-10-112 3-2v1zm-1 1 1-1c1 1-1 2-1 1zm-3 3c-1 0-1-2 1-1zm-2 0v2h-1v-1zm-15 20c-1 1 0 1 0 0zm-7 10-2 1 3-4c1 1-1 1-1 3zm-2 3c-1 1-1 0-1-1l1-1zm-3 5 2-3c-2 1-2 2-2 3-1 0 0 1 0 0zm1 2-1 2-2 3h-1l1 1c-1 0-3 2-1 2l1-2v-1l2-3 1-2c2 0 2-2 3-4-2 1-3 2-3 4zm-2 0c-2 1-4 4-3 5zm1 78v-1s0 1 0 0zm-2 1 1 1-1 1-1-1zm-11-65v1h-1v-1zm86 50c-4 2-6 3-10 3 1-2 5 0 5-3l-9 2c-2 0-1 0-1-2-1 0-2 1-1 2 0 2 1-1 1 1s-2 1-3 0c1 1 0 2-1 2-6-5-13 5-19 3-1-1 0-1 1-2l1 2 2-1c0-2-2-2-4-2-4 3-11 6-15 6l-1-2c0 2-2 3-2 3v-2c-7 1-10 4-18 6l-1-2c-2 0 0 2-2 2v-2c-1 1-1-1-2-1l-1 3-1-1c1 2 0 2-1 2-6 22-14 44-14 69 31-9 44-31 66-48 9-11 19-20 27-32l-5 2c3-2 7-4 8-8zm-114 10-1 1zm102 61c-1 1-4 1-3 3-4 1-4 6-8 6v2c-5 1-7 5-11 8v-1c-1 0-2 1 0 1l-1 1-5 4c-6 2-10 7-14 10-9 4-25 13-38 8l-1 1-1-2c-9-3-16-9-24-15h2c0-2-2-2-3-3-1 0 1 2-1 1l-5-9c-7-32 3-51 10-74v1c1 0 3-2 1-3l2-3c5-17 13-32 20-48 1 0 1 2 2 1 1 0-2-4 1-5v3l1-3h-1l1-2v1l4-3-1-3c3 0 3-3 2-4 2 2 1-2 4-2v1l-4 6c3 0 3-4 4-6l1-1h-1c2-5 5-10 9-13 1 0 2-1 2-3 2-1 3-2 3-4l-2 1c3-4 5-9 9-10 2-1-1-1 0-3 2 0 0 1 1 2l4-4-1-2c2 0 2 2 2 3-6 6-12 14-17 22 5-4 9-12 14-17l9-11 10-8c-3 0-8 5-10 8-2 0-4 6-6 2 2 1 1-3 4-4v-2h2c3-3 8-4 9-8 2 1 2-2 3-3 4 1 11-5 18-3 5-2 7 2 13 2 1 4 4 4 5 7l8 7c1 7-6 18-14 16-2 0-2-3-4-2-1-2-2-2-2-5l-8 3c-21 16-32 36-44 56v2l-10 19v2c-3 5-3 10-6 14 14-6 23-15 38-19 10-6 18-7 29-13 4 0 5-3 10-3l1-2c8-1 21-7 33-11 0 3 2 1 2 3 5 0 6 4 11 4l15 16c-2 3-3 6-6 7v2c-22 25-38 54-62 76l-1 2-2-1-1 3-1 1c0-2-2 0 0 0zm250-254v-1h1v1zm1 22 1-2c-1 1-2 1-1 2zm0 0-1 2zm-6 7c-2 1 0 3 0 1zm0 5c0 2-3 2-2 3l3 1c-1-1 1-4-1-4zm-2-1c-1-2 1-1 0 0 0 1-2 0 0 0zm0 5-1 3zm-2-3s0-2 1-1zm1 11-1 2h2zm-2 10v3l1-2zm-2-14h1zm0 0-1 1c1-1 0-3 2-4l1 7zm0 13v-2zm-2 5v-2zm-1-4c-1-1 0-2 1-2 1 1 0 2-1 2zm-1 10c-1 0-2-1-1-2s1 1 1 2zm-2-3 1-2c1 0 0 3-1 2zm0 11c-1-1 1-1 1-2h1l-1 1v2zm-3-6 1-1h1v1h-1v1zm1 13-1-2h1l1 1-1 1c0 1-2 0 0 0zm-2 1c-2-1-1-3 0-4 2 1-1 2 0 4zm-26 103v-2zm-4 14 2-3c0 2 0 3-2 3zm-2 12c-2-1 0-3 0-4zm-6 24v-1h1v1zm1 3-1-2zm-2 2 1-2zm0 2h-1zm-2 2c-1-2 2 0 0 0 0 2-2 1 0 0zm-2-3v-1h1l1 1-2 1zm-1 12c-1-2-3-1-2 0zm-26-29v-1zm-2-4-1-4c2 0 3 3 1 4zm-2-7v-1h1zm1-4c-1 2-3-2-1-2zm-2-5c-2 0 0-2-1-3zm-2-9-1-1c1-1 2 2 1 1zm-1-6h-1zm1 3-2-1c1-1 2 0 2 1zm-4-12v-5c1 0 2 5 0 5zm0-11h-1zm-1-1-1-1h1zm-1-11c-2 1-2-1-2-2 1-1 1 1 2 2zm-35 15v1h1l1-1zm-4-5v-1h1v1zm-1 19-2-2c2 0 1 1 2 2zm-3-15v1zm0 24v-1l1 1zm0 2c-1-1 0-1 0 0zm-2 6c0-1 0-3 1-2zm-1 4v-1h1v1zm1 8-1 2zm-2-5v-1zm0 4c-2 0-1-2-1-2zm-2 5c0-1-1-2 1-2zm-1-8-1 1zm0 4-1 1zm-1-7-1-1c-1-1 2-1 1 1zm0 24h-1zm-2 3 1-1zm0 2v-1h1v1zm-1 8c-1-2 1-4 1-6 1 2 0 5-1 6zm0 3-1-2zm-2-5v-2l1 1zm2 14c-2 1-1 3-1 5 2-1 0-3 1-5zm-2-10c-2-1-1-1-1-2zm-2 9v1zm-1 5v-1l1-1zm-3-51v-1l1 1zm-1 60v-1zm-2-43-1-1zm1 44c-2 0-2-1-2-2zm-6-14v1zm0 3-1 1zm-3-13 1-1v1zm0 7h-1zm-2 7c0-1 0-3 1-2zm0 7 1-1v1zm1-2c-3 0 0-2-1-4 2 0 0 3 1 4zm-5-2-1 1zm-1-12-1-1h1l1 1zm0 18c-1-1-1-3 1-3zm1 3c-2 0-1-2-1-3zm-3-11c0-1-1-4 1-4zm-2 2 2-1zm-1 11h1v-1zm198-288c0-4 2-5 3-8-2 0-3 4-6 4-3 7-10 14-12 23l-3 1v3c-4 4-5 9-9 13l-23 50v2c-21 46-31 99-47 149 0-2-2-1-1-3a694013 694013 0 0 0 -9-37v-3c-5-22-9-48-16-71-2-4-4-9-1-11l-2-7-1-1v-2c-1-1-5 1-4-2-1-1-5 1-5-2-3 0-2 2-4 2-3-3-5 0-8-2-1 2-2 2-4 2v2l-4-1c-7 10-9 23-14 34-3 15-8 29-10 45-3 7-5 16-6 24-6 19-10 39-13 62l1 1c-3 3-1 8-2 13l2 1c-2 1 0 2 0 5 1-1 0-3 2-2-2-1-1-3 1-4l1 11 1-4c3 1 2-4 4-4 0 2-2 3 0 5 1-1 0-4 2-5 0 1-2 3 0 4 3-2 1-5 3-8v10c2 0 0-3 2-3 2 1-1 3 1 3-1-2 1-1 2-1 0-1 0-3 2-3v2c1 0-1-2 1-2l1 5c2-2 1-7 2-10 1 1-1 4 1 5 1-2 2-3 0-6 4-3 1-11 5-15l-1 5c3-6 3-15 5-22h1v-7h2l-1-3 1-1c-1-5 1-9 2-12l1 1c-1-5 2-10 3-16 1 1-1 2 1 2 1-1 0-5-1-3 0-3 3-3 4-6-1-1-2-1-2-3 3-1 0-7 5-10h-2c2-2-1-7 3-7 0-2-1 1-2-1l3-1c2 17 5 34 10 52l5 16v4c2 4 5 8 6 13 2-1 2 1 3 2 1 5 6 5 9 8 7-1 13-4 19-3l11-4h7c-3-1-4 1-5-1 3 1 2-2 4-3 2 1 4 0 3-1h-1l5-5c-1-3 1-6 3-6v-2h1c0-4 1-10 3-13-2-6 4-9 2-16 1 0 2-2 0-2 2-1 1-1 1-3 3-2 1-6 4-9l-3-4c3 1 5-2 3-5 4-3 0-8 5-12l-1-3-1-1h2l1-6c-1 0-2-1-1-2 0 1 3 1 2-1s-1 2-2 0c2-2 1-8 5-8 2-3-2-9 3-8l-1-8c1-2 2-1 3-1-2-1-2-2-2-3 1-1 1-2 2-1 1-1-2-2 0-3v-2l2 1-1-8h2c0-7 3-14 5-21h-2c4-3 2-9 6-9l-1-2 5-11h-1c1-1 1-3 3-2l-1-4h-4c0-2 1-2 3-1l2-5c1 1 3 2 3 0l-2-1c0-2 1-4 3-3-1-1-2-1-2-3h2v-1c-1-2 1-2 1-3-2 0-2-3-1-4 0 1 0 3 1 2l-1-4 5-5-5-1 4-9-1-2 2-1 1-4c2 1 4-4 4-6-1 0 0 2-2 1 1-2 6-4 4-6 1-4 2-8 5-11l-4-1c-1 1 1 3-1 3l1 2c-2 1-2 4-4 4v-1c-2-2 0-4 2-4-3-2 0-6 2-5 1-7 7-13 8-19l-3 5-3 4z"></path></g></svg>
-
-									  </div>
-									  <p class="rhino__intro-type__second rhino__intro-type__small">
-										Crafted with<br>Love!
-									  </p>
-									</div>
-								  </div>
-
-								  <div class="parallax-container" aria-hidden="true">
-									<div class="parallax" id="scene">
-									  <div class="parallax__layer"><img alt="Flying Key" src="./img/intro/keys-01.png"></div>
-									  <div class="parallax__layer"><img alt="Flying Key" src="./img/intro/keys-02.png"></div>
-									  <div class="parallax__layer"><img alt="Flying Key" src="./img/intro/keys-03.png"></div>
-									  <div class="parallax__layer"><img alt="Flying Key" src="./img/intro/keys-04.png"></div>
-									  <div class="parallax__layer"><img alt="Flying Key" src="./img/intro/keys-05.png"></div>
-									</div>
-								  </div>
-
-                            </div>
-                            <div class="content">
-                                <div class="button">
-                                    <a href="#" target="_blank" tabindex="-1">
-                                        About Us <span><img src="./img/action/arrow.svg" alt=""></span>
-                                    </a>
-                                </div>
-                            </div>
-                            
+                    <div class="websitesSection">
+						<div class="content iframe-content">
+						   <iframe width="560" height="315"  src="https://www.youtube.com/embed/rYorxspVdl8" frameborder="0" 
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="content-img"><img src="./img/bg-pattern.jpg" /></div>
+						<div class="content content-card" >
+						   <div class="title" data-parallax='{"y": -20}'>About Us</div>
+						   <p>Rhino helps you to craft communication that connects with your consumers at every step of the buying journey . It’s less about being heard, more about being sought after. There’s whole new dimension of advertising that’s taking center stage today.</p>
+							<div class="card-container">
+								<div class="card">
+								  <h2>Mission</h2>
+								  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><path d="M464.927,300.429L427.155,206l37.772-94.429c1.849-4.622,1.284-9.859-1.506-13.98C460.63,93.469,455.977,91,451,91H276V56
+											c0-8.284-6.716-15-15-15H76V15c0-8.284-6.716-15-15-15S46,6.716,46,15c0,62.717,0,428.766,0,482c0,8.284,6.716,15,15,15
+											s15-6.716,15-15V271h120v35c0,8.189,6.673,15,15,15h240c4.978,0,9.63-2.469,12.421-6.591
+											C466.212,310.288,466.776,305.051,464.927,300.429z M246,241c-17.178,0-151.463,0-170,0V71h170C246,88.178,246,222.463,246,241z
+											 M247.213,291l24.391-24.391C274.47,263.745,276,259.804,276,256V121h152.845l-31.772,79.429c-1.43,3.576-1.43,7.566,0,11.143
+											L428.845,291H247.213z"/>
+									</g></svg>
+									<div class="desc">We go the extra mile to satisfy you .rhino work with game plan and have our perfection in driver's seat.</div>
+								</div>
+								<div class="card">
+								  <h2>Moto</h2>
+								 <svg height="512pt" viewBox="-56 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="m77.78125 170.320312c5.246094 1.734376 10.902344-1.109374 12.632812-6.355468 15.699219-47.480469 59.867188-79.378906 109.910157-79.378906 63.816406 0 115.738281 51.917968 115.738281 115.738281 0 49.324219-22.09375 78.792969-39.84375 102.472656-12.914062 17.222656-24.066406 32.101563-24.066406 50.144531 0 1.1875-.015625 2.363282-.042969 3.53125h-41.785156v-22.972656c0-5.523438-4.476563-10-10-10-5.523438 0-10 4.476562-10 10v22.972656h-41.789063c-.027344-1.167968-.042968-2.34375-.042968-3.53125 0-18.046875-11.152344-32.921875-24.066407-50.148437-13.074219-17.441407-27.890625-37.210938-35.238281-65.300781-1.398438-5.34375-6.867188-8.542969-12.207031-7.144532-5.339844 1.394532-8.539063 6.863282-7.140625 12.203125 8.339844 31.886719 25.109375 54.261719 38.585937 72.238281 11.210938 14.957032 20.066407 26.769532 20.066407 38.152344 0 4.789063.203124 9.460938.597656 13.917969v84.585937c0 .269532.019531.53125.039062.792969.007813.0625.003906.128907.011719.191407.035156.371093.09375.730468.167969 1.089843v.007813c3.472656 16.289062 12.363281 31.101562 25.042968 41.707031 12.921876 10.8125 29.25 16.765625 45.972657 16.765625 16.722656 0 33.046875-5.953125 45.972656-16.765625 12.675781-10.605469 21.570313-25.417969 25.039063-41.707031 0-.003906.003906-.007813.003906-.011719.074218-.355469.128906-.714844.167968-1.085937.003907-.0625.003907-.128907.007813-.191407.019531-.265625.039063-.527343.039063-.796875v-84.582031c.394531-4.457031.601562-9.128906.601562-13.917969 0-11.382812 8.855469-23.195312 20.066406-38.152344 18.5-24.679687 43.839844-58.476562 43.839844-114.464843 0-74.847657-60.894531-135.738281-135.738281-135.738281-58.6875 0-110.484375 37.414062-128.898438 93.101562-1.734375 5.242188 1.113281 10.898438 6.355469 12.632812zm122.542969 321.679688c-20.332031 0-38.667969-12.296875-47.355469-30.558594h94.710938c-8.691407 18.261719-27.027344 30.558594-47.355469 30.558594zm51.234375-50.558594h-102.46875v-22.484375h102.46875zm0-42.484375h-102.46875v-22.484375h102.46875zm0 0"/><path d="m200.324219 46.644531c5.523437 0 10-4.476562 10-10v-26.644531c0-5.523438-4.476563-10-10-10-5.523438 0-10 4.476562-10 10v26.644531c0 5.523438 4.476562 10 10 10zm0 0"/><path d="m10 210.324219h26.644531c5.523438 0 10-4.476563 10-10 0-5.523438-4.476562-10-10-10h-26.644531c-5.523438 0-10 4.476562-10 10 0 5.523437 4.476562 10 10 10zm0 0"/><path d="m246.109375 220.527344c0-5.523438-4.476563-10-10-10h-71.570313c-5.523437 0-10 4.476562-10 10 0 5.523437 4.476563 10 10 10h25.785157v22.972656c0 5.523438 4.476562 10 10 10 5.523437 0 10-4.476562 10-10v-22.972656h25.785156c5.523437 0 10-4.476563 10-10zm0 0"/><path d="m77.515625 91.65625c1.953125 1.953125 4.511719 2.929688 7.070313 2.929688 2.558593 0 5.117187-.976563 7.070312-2.929688 3.90625-3.90625 3.90625-10.238281 0-14.140625l-18.839844-18.839844c-3.90625-3.90625-10.238281-3.90625-14.144531 0-3.902344 3.902344-3.902344 10.234375 0 14.140625zm0 0"/><path d="m58.847656 351.800781c2.558594 0 5.117188-.976562 7.070313-2.929687l18.839843-18.839844c3.90625-3.90625 3.90625-10.234375 0-14.140625s-10.238281-3.90625-14.140624 0l-18.84375 18.839844c-3.902344 3.90625-3.902344 10.238281 0 14.140625 1.953124 1.953125 4.511718 2.929687 7.074218 2.929687zm0 0"/><path d="m316.0625 94.585938c2.558594 0 5.117188-.976563 7.070312-2.929688l18.839844-18.839844c3.90625-3.90625 3.90625-10.238281 0-14.144531-3.902344-3.90625-10.234375-3.902344-14.140625 0l-18.839843 18.839844c-3.90625 3.90625-3.90625 10.238281-.003907 14.144531 1.953125 1.953125 4.515625 2.929688 7.074219 2.929688zm0 0"/><path d="m315.890625 315.890625c-3.90625 3.902344-3.90625 10.234375 0 14.140625l18.839844 18.839844c1.953125 1.953125 4.511719 2.929687 7.070312 2.929687 2.558594 0 5.117188-.976562 7.070313-2.929687 3.90625-3.902344 3.90625-10.234375 0-14.140625l-18.839844-18.839844c-3.90625-3.90625-10.238281-3.90625-14.140625 0zm0 0"/><path d="m364.003906 210.324219h26.644532c5.523437 0 10-4.476563 10-10 0-5.523438-4.476563-10-10-10h-26.644532c-5.523437 0-10 4.476562-10 10 0 5.523437 4.476563 10 10 10zm0 0"/><path d="m200.324219 283.5c-5.507813 0-10 4.492188-10 10s4.492187 10 10 10c5.507812 0 10-4.492188 10-10s-4.492188-10-10-10zm0 0"/><path d="m84.585938 200.324219c0-5.507813-4.492188-10-10-10-5.511719 0-10 4.492187-10 10 0 5.507812 4.488281 10 10 10 5.507812 0 10-4.492188 10-10zm0 0"/></g></svg>
+								 <div class="desc">Let our creation be your innovation.</div>
+								</div>
+								<div class="card">
+								  <h2>Vision</h2>
+								  <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m256 151c-57.877 0-105 47.097-105 105 0 57.897 47.103 105 105 105 57.845 0 105-47.064 105-105 0-57.777-46.996-105-105-105zm72.38 124.617c-7.954-19.911-28.548-34.417-29.89-41.231 2.217-5.124 23.207-.533 29.705 1.349 3.712 13.203 3.706 26.903.185 39.882zm-106.17-76.991c-6.891 9.129-21.677 19.15-19.142 34.777 2.116 13.039 12.52 18.23 18.109 21.019.3.149.64.319.987.496-1.121 2.896-3.273 7.042-5.986 11.615-8.587-8.872-20.435-19.732-33.232-27.446 3.769-16.283 12.835-30.559 25.304-40.878 5.319.107 10.064.079 13.96.417zm-38.085 78.763c9.824 8.738 18.251 18.247 22.022 22.962 6.124 7.681 17.858 7.497 23.739-.365 20.712-27.7 36.401-56.23 6.06-71.717 13.578-14.719 24.924-29.357 13.726-46.982 22.546-1.892 43.455 6.304 58.52 20.926-33.936-.414-46.463 25.697-36.139 46.568 7.538 15.24 26.266 27.604 29.35 40.666.897 3.798 1.941 11.04 2.208 24.461-12.961 10.674-29.55 17.092-47.611 17.092-33.924 0-62.644-22.646-71.875-53.611z"/><path d="m256 91c-99.03 0-200.401 83.242-253.155 156.211-3.793 5.245-3.793 12.332 0 17.577 53.902 74.557 154.593 156.212 253.155 156.212 99.114 0 200.507-83.39 253.155-156.211 3.793-5.246 3.793-12.332 0-17.577-53.938-74.607-154.604-156.212-253.155-156.212zm0 300c-84.615 0-169.012-69.037-222.025-134.995 25.147-31.242 116.624-135.005 222.025-135.005 84.617 0 169.012 69.036 222.025 134.995-25.147 31.243-116.624 135.005-222.025 135.005z"/></g></svg>
+								  <div class="desc">Time's up for old fashions.we give life to style and design.</div>
+								</div>
+							</div>
+						</div>
                     </div>
                 </div>
                 
@@ -1436,7 +1501,7 @@
                                 <div class="quote">
                                     <div class="logoSlider">
                                         <div class="logoColumn">
-                                            <div class="logoContainer">
+                                            <div class="logoContainer zoomSeven">
                                                 <a data-slide="1">
                                                     <img class="normal" src="./logo/1.png" alt="">
                                                     <img class="hover" src="./logo/1.png" alt="">
@@ -1444,7 +1509,7 @@
                                             </div>
                                         </div>
                                         <div class="logoColumn">
-                                            <div class="logoContainer">
+                                            <div class="logoContainer zoomEight">
                                                 <a data-slide="2">
                                                     <img class="normal" src="./logo/2.png" alt="">
                                                     <img class="hover" src="./logo/2.png" alt="">
@@ -1452,7 +1517,7 @@
                                             </div>
                                         </div>
 										 <div class="logoColumn">
-                                            <div class="logoContainer">
+                                            <div class="logoContainer zoomNine">
                                                 <a data-slide="3">
                                                     <img class="normal" src="./logo/3.png" alt="">
                                                     <img class="hover" src="./logo/3.png" alt="">
@@ -1460,26 +1525,18 @@
                                             </div>
                                         </div>
                                         <div class="logoColumn">
-                                            <div class="logoContainer">
-                                                <a data-slide="2">
+                                            <div class="logoContainer zoomEight">
+                                                <a data-slide="4">
                                                     <img class="normal" src="./logo/4.png" alt="">
                                                     <img class="hover" src="./logo/4.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
 										 <div class="logoColumn">
-                                            <div class="logoContainer">
-                                                <a data-slide="3">
+                                            <div class="logoContainer zoomSeven">
+                                                <a data-slide="5">
                                                     <img class="normal" src="./logo/5.png" alt="">
                                                     <img class="hover" src="./logo/5.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="logoColumn">
-                                            <div class="logoContainer">
-                                                <a data-slide="3">
-                                                    <img class="normal" src="./logo/6.png" alt="">
-                                                    <img class="hover" src="./logo/6.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -1488,7 +1545,7 @@
                                 <div class="quote">
                                     <div class="logoSlider">
                                         <div class="logoColumn">
-                                            <div class="logoContainer">
+                                            <div class="logoContainer zoomSeven">
                                                 <a data-slide="1">
                                                     <img class="normal" src="./logo/7.png" alt="">
                                                     <img class="hover" src="./logo/7.png" alt="">
@@ -1496,7 +1553,7 @@
                                             </div>
                                         </div>
                                         <div class="logoColumn">
-                                            <div class="logoContainer">
+                                            <div class="logoContainer zoomEight">
                                                 <a data-slide="2">
                                                     <img class="normal" src="./logo/8.png" alt="">
                                                     <img class="hover" src="./logo/8.png" alt="">
@@ -1504,7 +1561,7 @@
                                             </div>
                                         </div>
 										 <div class="logoColumn">
-                                            <div class="logoContainer">
+                                            <div class="logoContainer zoomNine">
                                                 <a data-slide="3">
                                                     <img class="normal" src="./logo/9.png" alt="">
                                                     <img class="hover" src="./logo/9.png" alt="">
@@ -1512,29 +1569,22 @@
                                             </div>
                                         </div>
                                         <div class="logoColumn">
-                                            <div class="logoContainer">
-                                                <a data-slide="2">
+                                            <div class="logoContainer zoomEight">
+                                                <a data-slide="4">
                                                     <img class="normal" src="./logo/1.png" alt="">
                                                     <img class="hover" src="./logo/1.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
 										 <div class="logoColumn">
-                                            <div class="logoContainer">
-                                                <a data-slide="3">
-                                                    <img class="normal" src="./logo/2.png" alt="">
-                                                    <img class="hover" src="./logo/2.png" alt="">
+                                            <div class="logoContainer zoomSeven">
+                                                <a data-slide="5">
+                                                    <img class="normal" src="./logo/6.png" alt="">
+                                                    <img class="hover" src="./logo/6.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="logoColumn">
-                                            <div class="logoContainer">
-                                                <a data-slide="3">
-                                                    <img class="normal" src="./logo/3.png" alt="">
-                                                    <img class="hover" src="./logo/3.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -1549,226 +1599,34 @@
                                 <div class="rhinoSlide">
                                     <div class="headline" data-parallax='{"y": -40}'>
                                         <h1>Portfolio</h1>
-                                        <p>There’s whole new dimension of advertising that’s taking center stage today, we create exciting, innovative and<br>
-                                            customizable designs for the same.</p>
+                                        <div align="center">
+											<button class="btn btn-default filter-button active" data-filter="All">All</button>
+											<button class="btn btn-default filter-button" data-filter="ProductDesign">Product Design</button>
+											<button class="btn btn-default filter-button" data-filter="TShirt">T-Shirt</button>
+											<button class="btn btn-default filter-button" data-filter="SocialAwareness">Social Awareness</button>
+											<button class="btn btn-default filter-button" data-filter="GreetingsInvitations">Greetings & Invitations</button>
+										</div>
                                     </div>
-                                </div>
-                            </div>
-                        
-                            <div class="l-container">
-                                <div class="b-game-card">
-                                  <div class="b-game-card__cover" style="background-image: url(./img/portfolio/1.jpg);"></div>
-                                </div>
-                                <div class="b-game-card">
-                                  <div class="b-game-card__cover" style="background-image: url(./img/portfolio/2.jpg);"></div>
-                                </div>
-                                <div class="b-game-card">
-                                  <div class="b-game-card__cover" style="background-image: url(./img/portfolio/3.jpg);"></div>
-                                </div>
-                                <div class="b-game-card">
-                                  <div class="b-game-card__cover" style="background-image: url(./img/portfolio/4.jpg);"></div>
-                                </div>
-                                <div class="b-game-card">
-                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/5.jpg);"></div>
-                                  </div>
-                                  <div class="b-game-card">
-                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/6.jpg);"></div>
-                                  </div>
-                                  <div class="b-game-card">
-                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/7.jpg);"></div>
-                                  </div>
-                                  <div class="b-game-card">
-                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/8.jpg);"></div>
-                                  </div>
-                                  <div class="b-game-card">
-                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/9.jpg);"></div>
-                                  </div>
-                                  <div class="b-game-card">
-                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/10.jpg);"></div>
-                                  </div>
-                                  <div class="b-game-card">
-                                    <div class="b-game-card__cover" style="background-image: url(./img/portfolio/11.jpg);"></div>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="rhinoSlider" data-parallax='{"y": -40}'>
-                                <div class="rhinoSlide">
-                                    <div class="headline" data-parallax='{"y": -40}'>
-                                        <div class="button">
-                                            <a href="portfolio.html">
-                                                View more <span><img src="./img/action/arrow.svg" alt=""></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    <!--
-                        <div class="wrapper">
-                            <div class="rhinoSlider" data-parallax='{"y": -40}'>
-                                <div class="rhinoSlide">
-                                    <div class="navigation">
-                                        <div class="column active">
-                                            <div class="number"><div>1</div></div>
-                                            <div class="name">Social Awareness Post</div>
-                                            <div class="preloader"><div><span></span></div></div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="number goToNext"><div>2</div></div>
-                                            <div class="name goToNext">T-Shirt Design</div>
-                                            <div class="preloader"><div><span></span></div></div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="number goTo3Slide"><div>3</div></div>
-                                            <div class="name goTo3Slide">Poster Design</div>
-                                        </div>
-                                    </div>
-                                    <div class="headline" data-parallax='{"y": -40}'>
-                                        <h1>Social Awareness Post</h1>
-                                        <p>In today’s world, it is imperative that every artist use their skill and platform<br>
-                                            to promote the message of sustainability and positivity.</p>
-                                        <div class="button">
-                                            <a href="#" target="_blank">
-                                                Read more <span><img src="./img/action/arrow.svg" alt=""></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="slideImage">
-										<video style="max-height: 620px;" autoplay="" class="bloor-me" loop="" muted="" playsinline=""  id="baby" width="100%" poster="./banner/baby.png">
-											<source src="./banner/baby.webm" type="video/webm">
-											<source src="./banner/baby.mp4" type="video/mp4">
-										</video>
+									
+									<div class="gal">
+										<img src="./img/portfolio/1.jpg" class="filter SocialAwareness">		
+										<img src="./img/portfolio/2.jpg" class="filter GreetingsInvitations">		
+										<img src="./img/portfolio/3.jpg" class="filter SocialAwareness">		
+										<img src="./img/portfolio/4.jpg" class="filter ProductDesign">		
+										<img src="./img/portfolio/5.jpg" class="filter SocialAwareness">		
+										<img src="./img/portfolio/6.jpg" class="filter SocialAwareness">		
+										<img src="./img/portfolio/7.jpg" class="filter SocialAwareness">		
+										<img src="./img/portfolio/8.jpg" class="filter TShirt">		
+										<img src="./img/portfolio/9.jpg" class="filter SocialAwareness">		
+										<img src="./img/portfolio/10.jpg" class="filter SocialAwareness">		
+										<img src="./img/portfolio/11.jpg" class="filter SocialAwareness">			
 									</div>
-                                </div>
-                                <div class="rhinoSlide">
-                                    <div class="navigation">
-                                        <div class="column">
-                                            <div class="number goToPrev"><div>1</div></div>
-                                            <div class="name goToPrev">Social Awareness Post</div>
-                                            <div class="preloader"><div><span></span></div></div>
-                                        </div>
-                                        <div class="column active">
-                                            <div class="number"><div>2</div></div>
-                                            <div class="name">T-Shirt Design</div>
-                                            <div class="preloader"><div><span></span></div></div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="number goToNext"><div>3</div></div>
-                                            <div class="name goToNext">Poster Design</div>
-                                        </div>
-                                    </div>
-                                    <div class="headline" data-parallax='{"y": -40}'>
-                                        <h1>T-Shirt Design</h1>
-                                        <p>Wear you personality on your sleeve, quite literally, with<br>
-                                            our edgy and contemporary T-shirt designs.</p>
-                                        <div class="button">
-                                            <a href="#" target="_blank">
-                                                Read more <span><img src="./img/action/arrow.svg" alt=""></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="slideImage">
-										<video style="max-height: 620px;" autoplay="" class="bloor-me" loop="" muted="" playsinline="" id="caricature" width="100%" poster="./banner/caricature.png">
-											<source src="./banner/caricature.webm" type="video/webm">
-											<source src="./banner/caricature.mp4" type="video/mp4">
-										</video>
-									</div>
-                                </div>
-                                <div class="rhinoSlide">
-                                    <div class="navigation">
-                                        <div class="column">
-                                            <div class="number goToPrev"><div>2</div></div>
-                                            <div class="name goToPrev">T-Shirt Design</div>
-                                            <div class="preloader"><div><span></span></div></div>
-                                        </div>
-                                        <div class="column active">
-                                            <div class="number"><div>3</div></div>
-                                            <div class="name">Poster Design</div>
-                                            <div class="preloader"><div><span></span></div></div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="number goToNext"><div>4</div></div>
-                                            <div class="name goToNext">Logo Design</div>
-                                        </div>
-                                    </div>
-                                    <div class="headline" data-parallax='{"y": -40}'>
-                                        <h1>Poster Design</h1>
-
-                                           <p> We excel at understand a client’s brand identity and translate<br>
-                                            their mission/vision onto a canvas creatively.</p>
-                                            
-                                        <div class="button">
-                                            <a href="@" target="_blank">
-                                                Read more <span><img src="./img/action/arrow.svg" alt=""></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="slideImage"><img src="./img/slides/3.png" alt=""></div>
-                                </div>
-                                <div class="rhinoSlide">
-                                    <div class="navigation">
-                                        <div class="column">
-                                            <div class="number goToPrev"><div>3</div></div>
-                                            <div class="name goToPrev">Poster Design</div>
-                                            <div class="preloader"><div><span></span></div></div>
-                                        </div>
-                                        <div class="column active">
-                                            <div class="number"><div>4</div></div>
-                                            <div class="name">Logo Design</div>
-                                            <div class="preloader"><div><span></span></div></div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="number goToNext"><div>5</div></div>
-                                            <div class="name goToNext">Packaging Design</div>
-                                        </div>
-                                    </div>
-                                    <div class="headline" data-parallax='{"y": -40}'>
-                                        <h1>Logo Design</h1>
-                                        <p>Our expertise at branding and logo design helps us leave <br>
-                                            an indelible mark in the mind of the consumer.</p>
-                                        <div class="button">
-                                            <a href="#" target="_blank">
-                                                Read more <span><img src="./img/action/arrow.svg" alt=""></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="slideImage"><img src="./img/slides/4.png" alt=""></div>
-                                </div>
-                                <div class="rhinoSlide">
-                                    <div class="navigation">
-                                        <div class="column">
-                                            <div class="number goToPrev"><div>4</div></div>
-                                            <div class="name goToPrev">Logo Design</div>
-                                            <div class="preloader"><div><span></span></div></div>
-                                        </div>
-                                        <div class="column active">
-                                            <div class="number"><div>5</div></div>
-                                            <div class="name">Packaging Design</div>
-                                            <div class="preloader"><div><span></span></div></div>
-                                        </div>
-                                        <div class="column goTo1Slide">
-                                            <div class="number goToNext"><div>1</div></div>
-                                            <div class="name goToNext">Social Awareness Post</div>
-                                        </div>
-                                    </div>
-                                    <div class="headline" data-parallax='{"y": -40}'>
-                                        <h1>Packaging Design</h1>
-                                        <p>Packaging is the face of a brand and we create exciting, innovative and<br>
-                                            customizable designs for the same.</p>
-                                        <div class="button">
-                                            <a href="#" target="_blank">
-                                                Read more <span><img src="./img/action/arrow.svg" alt=""></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="slideImage"><img src="./img/slides/3.png" alt=""></div>
+									
                                 </div>
                             </div>
-                        </div>
-                    -->
-                    </div>
+						</div>
+					</div>
                 </div>
-
-                
 
                 <div class="section fp-auto-height">
                     <div class="ourService" style="padding-top:120px;">
@@ -1783,7 +1641,7 @@
                                       <a target="_blank" href="#">
                                         <div class="icon"><img src="./img/service/design.png" width="60" alt=""></div>
                                         <div class="title">Design</div>
-                                        <div class="desc">some tag line</div>
+                                        <div class="desc">Dynamic Sketches</div>
                                       </a>
                                     </div>
                                 </div>
@@ -1792,7 +1650,7 @@
                                       <a target="_blank" href="#">
                                         <div class="icon"><img src="./img/service/media marketing.png" width="60" alt=""></div>
                                         <div class="title">Media Marketing</div>
-                                        <div class="desc">some tag line</div>
+                                        <div class="desc">Do Web Trade</div>
                                       </a>
                                     </div>
                                 </div>
@@ -1802,7 +1660,7 @@
                                       <a target="_blank" href="#">
                                         <div class="icon"><img src="./img/service/content writing.png" width="70" alt=""></div>
                                         <div class="title">Content Writing</div>
-                                        <div class="desc">some tag line</div>
+                                        <div class="desc">Let's Draft</div>
                                       </a>
                                     </div>
                                 </div>
@@ -1810,7 +1668,7 @@
                                     <div class="itemContainer">
                                         <div class="icon"><img src="./img/service/caricature.png" width="70" alt=""></div>
                                         <div class="title">Caricature</div>
-                                        <div class="desc">some tag line</div>
+                                        <div class="desc">Cartoony Creation</div>
                                     </div>
                                 </div>
                                 <div class="item">
@@ -1818,7 +1676,7 @@
                                       <a target="_blank" href="#">
                                         <div class="icon"><img src="./img/service/website development.png" width="60" alt=""></div>
                                         <div class="title">Website Development</div>
-                                        <div class="desc">some tag line</div>
+                                        <div class="desc">Your Online Profile</div>
                                       </a>
                                     </div>
                                 </div>
@@ -1826,7 +1684,7 @@
                                     <div class="itemContainer">
                                         <div class="icon"><img src="./img/service/print collateral.png" width="60" alt=""></div>
                                         <div class="title">Print Collaterals</div>
-                                        <div class="desc">some tag line</div>
+                                        <div class="desc">Keep Promoting</div>
                                     </div>
                                 </div>
                             </div>
@@ -1844,16 +1702,8 @@
                         </div>
                         <div class="wrapper">
 
-                            <h2 data-parallax='{"y": -20}'>Our Team</h2>
-                            <div class="columns">
+                            <h2 data-parallax='{"y": -20}'>Clash of Rhinos</h2>
 
-                                <div class="centerColumn">
-                                    <div class="columnContainer">
-                                        We are an experienced team creating great, unique and easy to set up templates for WordPress. We are also creating websites and web applications. In our work we use the latest technologies, and our heads are always full of ideas. Our domain is creativity, experience and openness to new horizons. We hope that our products satisfy you, and fully meet your needs.
-                                    </div>
-                                </div>
-                                
-                            </div>
                             <div class="team">
                                 <div class="column person1" data-parallax='{"y": 0}'>
                                     <div class="columnContainer">
@@ -1928,52 +1778,19 @@
 
                 <div class="section fp-auto-height">
                     <div class="contactSection">
-                        <div class="wrapper">
+                        <div class="wrapper" style="margin: 0;">
                             <h2 data-parallax='{"y": -40}'>Contact Us</h2>
                             <div class="columns">
                                 <div class="column">
                                     <div style="
                                         -webkit-filter: grayscale(100%);
                                         filter: grayscale(100%);">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d497709.3401486628!2d80.235746!3d12.949171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d8b4db1ae57%3A0x284f3e8082885b20!2sRegalia%20Apartment%20MCN%20nagar%20extension!5e0!3m2!1sen!2sus!4v1592920267691!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d497709.3401486628!2d80.235746!3d12.949171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d8b4db1ae57%3A0x284f3e8082885b20!2sRegalia%20Apartment%20MCN%20nagar%20extension!5e0!3m2!1sen!2sus!4v1592920267691!5m2!1sen!2sus"
+									width="1600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                                     </div>
-                                    <!--<div class="icon" data-parallax='{"y": -40}'><img src="./img/action/forum.svg" alt=""></div>
-                                    <div class="title" data-parallax='{"y": -20}'>
-                                        <div>Support forum</div>
-                                        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 550 110" style="enable-background:new 0 0 550 110;" xml:space="preserve">
-                                            <g>
-                                                <path class="letter1" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M82.2,104.3c-3.2,0-4.8-1.7-4.8-5.1V11.4
-                                                    c0-3.4,1.6-5.1,4.8-5.1h54.1c3.4,0,5.1,1.5,5.1,4.4v8.1c0,3-1.7,4.4-5.1,4.4H97.4V47h33.3c3.4,0,5.1,1.5,5.1,4.4v8.1
-                                                    c0,3-1.7,4.4-5.1,4.4H97.4v35.2c0,3.4-1.6,5.1-4.8,5.1H82.2z"/>
-                                                <path class="letter2" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M152.4,68.4c0-11.6,3-20.7,9-27.3
-                                                    c6-6.6,14.9-9.9,26.8-9.9c11.8,0,20.8,3.3,26.8,9.9c6,6.6,9,15.7,9,27.3s-3,20.7-9,27.3c-6,6.6-14.9,9.9-26.8,9.9
-                                                    c-11.8,0-20.8-3.3-26.8-9.9C155.4,89.1,152.4,80,152.4,68.4z M172.6,68.4c0,8.7,1.3,14.8,4,18.4s6.5,5.4,11.5,5.4
-                                                    c5,0,8.9-1.8,11.5-5.4s4-9.8,4-18.4c0-8.7-1.3-14.8-4-18.4s-6.5-5.4-11.5-5.4c-5,0-8.9,1.8-11.5,5.4S172.6,59.7,172.6,68.4z"/>
-                                                <path class="letter3" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M242.7,104.3c-2.7,0-4.1-1.4-4.1-4.1V36.6
-                                                    c0-2.7,1.4-4.1,4.1-4.1h10.8c2.7,0,4.1,1.4,4.1,4.1v5.6c1.2-2.9,3.2-5.5,6-7.7c2.8-2.2,6.1-3.3,10-3.3c2.6,0,4.8,0.3,6.5,1
-                                                    c1.6,0.6,2.2,1.7,1.8,3.3l-1.9,8.1c-0.4,1.8-1.6,2.4-3.7,1.6c-1.2-0.4-2.3-0.6-3.4-0.6c-4.4,0-8.1,2.6-10.9,7.9
-                                                    c-2.9,5.2-4.3,12.9-4.3,22.9v24.9c0,2.7-1.4,4.1-4.1,4.1H242.7z"/>
-                                                <path class="letter4" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M292.2,74.5V36.6c0-2.7,1.4-4.1,4.1-4.1h10.9
-                                                    c2.7,0,4.1,1.4,4.1,4.1v32.9c0,9.9,0.7,16.2,2.1,18.8s4.2,3.9,8.6,3.9c4.7,0,8.3-1.9,10.7-5.6c2.4-3.7,3.7-11.4,3.7-23.1V36.6
-                                                    c0-2.7,1.4-4.1,4.1-4.1h10.9c2.7,0,4.1,1.4,4.1,4.1v63.6c0,2.7-1.4,4.1-4.1,4.1h-10.8c-2.7,0-4.1-1.4-4.1-4.1v-4
-                                                    c-2.1,3.6-4.8,6.1-8.1,7.4s-7.2,2-11.6,2c-7,0-12.8-2.2-17.4-6.7C294.6,94.5,292.2,86.3,292.2,74.5z"/>
-                                                <path class="letter5" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M378.1,104.3c-2.7,0-4.1-1.4-4.1-4.1V36.6
-                                                    c0-2.7,1.4-4.1,4.1-4.1h10.8c2.7,0,4.1,1.4,4.1,4.1v4c1.4-2.9,3.7-5.2,6.9-6.9c3.2-1.7,6.3-2.5,9.1-2.5c5.6,0,10,1,13.1,2.9
-                                                    c3.1,1.9,5.3,4.1,6.5,6.5h0.3c4-3.9,7.7-6.5,11-7.7c3.3-1.2,7.5-1.8,12.6-1.8c6.9,0,12.6,2.2,17.4,6.7c4.7,4.5,7.1,12.6,7.1,24.5
-                                                    v37.9c0,2.7-1.4,4.1-4.1,4.1h-10.9c-2.7,0-4.1-1.4-4.1-4.1V67.2c0-9.9-0.7-16.2-2.1-18.8c-1.4-2.6-3.9-3.9-7.4-3.9
-                                                    c-3.3,0-6.3,1.9-9.1,5.6c-2.7,3.7-4.1,11.4-4.1,23.1v26.9c0,2.7-1.4,4.1-4.1,4.1h-10.9c-2.7,0-4.1-1.4-4.1-4.1V67.2
-                                                    c0-9.9-0.7-16.2-2.1-18.8s-3.9-3.9-7.5-3.9c-3.3,0-6.4,1.9-9.1,5.6c-2.8,3.7-4.1,11.4-4.1,23.1v26.9c0,2.7-1.4,4.1-4.1,4.1H378.1z"
-                                                    />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <div class="button">
-                                        <a href="#" target="_blank">
-                                            Read more <span><img src="./img/action/arrow.svg" alt=""></span>
-                                        </a>
-                                    </div>-->
                                 </div>
+							 </div>
+							 <div class="columns">
                                 <div class="column">
                                     <div id="social-test">
                                         <h2>Address</h2>
@@ -1981,71 +1798,18 @@
                                         padding-bottom: 25px;
                                         color: #8C6A3A;
                                         font-size: 18px;">
-                                            G2, Sabari Flats, MCN Nager Extension,<br>Thoraipakkam,Chennai-600097.
+                                            G2, Sabari Flats, MCN Nager Extension,<br>Thoraipakkam, Chennai-600097.<br>Phone: 7305487877 / 6385565826<br> E-Mail: rhinocreativeagency@gmail.com
                                         </p>
                                         <ul class="social">
                                             <li><a href="https://www.facebook.com/CreativeAdvertisingAgency/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                             <li><a href="https://twitter.com/agency_rhino?s=08" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                             <li><a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                             <li><a href="https://www.youtube.com/channel/UCA8qh3zpWzJ9kZjw_u-fZlw" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                                            <li><a href="" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
                                             <li><a href="https://www.linkedin.com/in/rhinocreative-agency-6861141a8/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                         </li>
                                         </ul>
                                       </div>
-                                <!--
-                                    <div class="icon" data-parallax='{"y": -40}'><img src="./img/action/contact.svg" alt=""></div>
-                                    <div class="title" data-parallax='{"y": -20}'>
-                                        <div>Contact us</div>
-                                        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 550 110" style="enable-background:new 0 0 550 110;" xml:space="preserve">
-                                            <g>
-                                                <path class="letter6" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M15.4,55.3c0-15.7,4-28.2,12-37.5
-                                                    c8-9.3,19.5-13.9,34.5-13.9c8.7,0,16,1.3,22,4c6,2.7,10.3,6.6,12.7,11.7c1.6,3.4,1.4,5.7-0.8,6.8l-8.2,4.4
-                                                    c-2.9,1.5-5.2,0.7-7.1-2.6c-1.2-2.1-3.4-4-6.6-5.7c-3.2-1.7-7-2.5-11.3-2.5c-9.6,0-16.3,3-20.1,9.1c-3.8,6-5.7,14.8-5.7,26.1
-                                                    c0,11.4,1.9,20.1,5.7,26.1c3.8,6,10.5,9.1,20.1,9.1c5.1,0,9.5-1.2,13-3.5c3.5-2.3,6-4.5,7.3-6.6c2.2-3.4,4.6-4.3,7.1-2.6l8.2,5.5
-                                                    c2.2,1.5,2.5,3.8,0.7,6.8c-2.6,4.6-7.2,8.5-13.6,11.7s-14.2,4.9-23.4,4.9c-14.8,0-26.3-4.6-34.4-13.9C19.4,83.5,15.4,71,15.4,55.3z
-                                                    "/>
-                                                <path class="letter7" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M111.9,68.4c0-11.6,3-20.7,9-27.3
-                                                    c6-6.6,14.9-9.9,26.8-9.9c11.8,0,20.8,3.3,26.8,9.9c6,6.6,9,15.7,9,27.3s-3,20.7-9,27.3c-6,6.6-14.9,9.9-26.8,9.9
-                                                    c-11.8,0-20.8-3.3-26.8-9.9C114.9,89.1,111.9,80,111.9,68.4z M132.2,68.4c0,8.7,1.3,14.8,4,18.4s6.5,5.4,11.5,5.4
-                                                    c5,0,8.9-1.8,11.5-5.4s4-9.8,4-18.4c0-8.7-1.3-14.8-4-18.4s-6.5-5.4-11.5-5.4c-5,0-8.9,1.8-11.5,5.4S132.2,59.7,132.2,68.4z"/>
-                                                <path class="letter8" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M202.3,104.3c-2.7,0-4.1-1.4-4.1-4.1V36.6
-                                                    c0-2.7,1.4-4.1,4.1-4.1h10.8c2.7,0,4.1,1.4,4.1,4.1v4c2.1-3.6,4.8-6.1,8-7.4c3.3-1.3,7.2-2,11.8-2c7.2,0,13.1,2.2,17.7,6.7
-                                                    c4.7,4.5,7,12.6,7,24.5v37.9c0,2.7-1.4,4.1-4.1,4.1h-10.9c-2.7,0-4.1-1.4-4.1-4.1V67.2c0-9.9-0.7-16.2-2.1-18.8s-4.3-3.9-8.9-3.9
-                                                    c-4.8,0-8.4,1.9-10.9,5.6c-2.4,3.7-3.6,11.4-3.6,23.1v26.9c0,2.7-1.4,4.1-4.1,4.1H202.3z"/>
-                                                <path class="letter9" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M277.8,46.2c-2.7,0-4-1.1-4-3.4v-6.8
-                                                    c0-2.3,1.3-3.4,4-3.4h4.6v-2.4c0-2.1,0.5-3.9,1.4-5.6l5.3-9.2c1-1.7,2.2-2.6,3.6-2.6h4.8c2.7,0,4.1,1.4,4.1,4.1v15.7h11.1
-                                                    c2.7,0,4,1.1,4,3.4v6.8c0,2.3-1.3,3.4-4,3.4h-11.1v33.9c0,4.6,0.3,8,1,10c0.7,2,2.4,3,5.2,3c1.4,0,3-0.2,4.8-0.7s3.2-0.9,4.2-1.4
-                                                    c1.6-0.7,2.6-0.2,3.1,1.6l2.1,7.8c0.4,1.5-0.2,2.7-1.8,3.4c-1.5,0.7-3.6,1.3-6.2,1.9c-2.6,0.6-5.3,0.9-7.9,0.9
-                                                    c-6.5,0-12.1-1.3-16.7-4c-4.6-2.7-6.9-8.2-6.9-16.6V46.2H277.8z"/>
-                                                <path class="letter10" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M330.9,85.1c0-9.1,4.4-15.7,13.1-19.8
-                                                    c8.7-4.1,18.6-6.3,29.8-6.6V56c0-4.2-1-7.2-3.1-8.9c-2.1-1.7-5-2.6-8.8-2.6c-2.6,0-5,0.4-7,1.1c-2,0.8-3.8,1.6-5.3,2.6
-                                                    c-1.5,1-2.8,2-4,3c-2.1,1.8-3.8,1.9-5.2,0.3l-5.7-7c-1.4-1.7-1.1-3.5,1-5.3c1.6-1.4,3.5-2.6,5.6-3.7c2.1-1,4.9-2,8.4-3
-                                                    c3.5-0.9,8.1-1.4,13.7-1.4c9.5,0,16.8,2.2,21.8,6.6c5.1,4.4,7.6,10.8,7.6,19.3v43.1c0,2.7-1.4,4.1-4.1,4.1h-11.3
-                                                    c-2.5,0-3.7-1.4-3.7-4.1v-2.1c-2.7,2.6-5.9,4.5-9.7,5.7s-7.2,1.8-10.4,1.8c-7.5,0-13.1-1.8-17-5.5
-                                                    C332.9,96.5,330.9,91.5,330.9,85.1z M351.2,84.7c0,1.6,0.3,3,1,4.1c0.6,1.2,1.6,2,3,2.6s2.9,0.8,4.6,0.8c2.3,0,4.6-0.3,6.8-1
-                                                    c2.2-0.6,4.6-2.1,7.3-4.5V71.9c-7.7,0.9-12.8,2-15.4,3.3s-4.5,2.8-5.6,4.2C351.7,81,351.2,82.7,351.2,84.7z"/>
-                                                <path class="letter11" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M407.7,68.4c0-11.6,2.9-20.7,8.8-27.3
-                                                    c5.8-6.6,14.8-9.9,26.9-9.9c7.1,0,12.6,0.9,16.5,2.8c3.9,1.9,7.1,4.6,9.4,8.2c1.4,2.1,1.2,3.8-0.7,5.1l-7.2,4.8
-                                                    c-2.1,1.4-3.9,0.8-5.4-1.6c-0.8-1.2-2.3-2.5-4.4-3.8s-4.9-2.1-8.1-2.1c-5.2,0-9,1.8-11.6,5.4c-2.6,3.6-3.8,9.8-3.8,18.4
-                                                    c0,8.7,1.3,14.8,3.8,18.4c2.6,3.6,6.4,5.4,11.6,5.4c3.7,0,6.7-0.8,9-2.3c2.3-1.5,4.4-3.6,6.4-6c1.7-2.1,3.6-2.4,5.5-0.9l6.4,5
-                                                    c1.9,1.5,2,3.5,0.3,6c-1.8,2.6-4.8,5.2-9.1,7.8c-4.3,2.6-10.4,3.8-18.5,3.8c-12.1,0-21-3.3-26.9-9.9
-                                                    C410.6,89.1,407.7,80,407.7,68.4z"/>
-                                                <path class="letter12" style="fill:none;stroke:#8C6A3A;stroke-width:1.9775;stroke-miterlimit:10;" d="M483.4,46.2c-2.7,0-4-1.1-4-3.4v-6.8
-                                                    c0-2.3,1.3-3.4,4-3.4h4.6v-2.4c0-2.1,0.5-3.9,1.4-5.6l5.3-9.2c1-1.7,2.2-2.6,3.6-2.6h4.8c2.7,0,4.1,1.4,4.1,4.1v15.7h11.1
-                                                    c2.7,0,4,1.1,4,3.4v6.8c0,2.3-1.3,3.4-4,3.4h-11.1v33.9c0,4.6,0.3,8,1,10c0.7,2,2.4,3,5.2,3c1.4,0,3-0.2,4.8-0.7s3.2-0.9,4.2-1.4
-                                                    c1.6-0.7,2.6-0.2,3.1,1.6l2.1,7.8c0.4,1.5-0.2,2.7-1.8,3.4c-1.5,0.7-3.6,1.3-6.2,1.9c-2.6,0.6-5.3,0.9-7.9,0.9
-                                                    c-6.5,0-12.1-1.3-16.7-4c-4.6-2.7-6.9-8.2-6.9-16.6V46.2H483.4z"/>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <div class="button">
-                                        <a href="#" rel="nofollow" target="_blank">
-                                            Read more <span><img src="./img/action/arrow.svg" alt=""></span>
-                                        </a>
-                                    </div>
-                                -->
+                             
                                 </div>
                             </div>
                             <br><br>
@@ -2108,6 +1872,36 @@
             
         // Make sure your path has the same filename as your animated     SVG's JSON file //
         })
+		
+		$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "All")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+		$(".filter-button").removeClass("active");
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active");
+		} else {
+			$(this).addClass("active");
+		}
+    });
+    
+   
+
+});
       </script>
     </body>
 
