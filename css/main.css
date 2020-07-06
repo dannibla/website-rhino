@@ -968,6 +968,7 @@ a {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  text-transform:uppercase;
   font-size: 50px;
 }
 .clientsSection .quoteSlider .quote {
@@ -1233,6 +1234,7 @@ a {
   padding: 0 0 80px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  text-transform:uppercase;
 }
 .ourService .items {
   font-size: 0;
@@ -1303,6 +1305,7 @@ a {
   font-weight: 700;
   text-align: center;
   padding-bottom: 60px;
+  text-transform:uppercase;
 }
 .whoSection .columns {
   display: table;
@@ -1538,6 +1541,7 @@ a {
   font-weight: 700;
   text-align: center;
   padding-bottom: 60px;
+  text-transform:uppercase;
 }
 .contactSection .columns {
   display: table;
@@ -1854,6 +1858,7 @@ a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding-bottom:65px;
+  text-transform:uppercase;
 }
 .rhinoSlider .rhinoSlide .headline .button {
   padding: 40px 0 0 0;
@@ -2782,7 +2787,7 @@ a {
     width: 580px;
     height: 580px;
     right: -230px;
-    top: -30px;
+    top: 80px;
   }
   .clientsSection {
     padding: 0 0 40px 0;
@@ -3044,13 +3049,13 @@ a {
 }
 @media screen and (min-width: 989px) {
 	.clientsSection .logoSlider .logoColumn .logoContainer.zoomNine {
-		transform: scale(0.9);
+		transform: scale(1);
 	  }
   .clientsSection .logoSlider .logoColumn .logoContainer.zoomEight {
-    transform: scale(0.8);
+    transform: scale(0.92);
   }
   .clientsSection .logoSlider .logoColumn .logoContainer.zoomSeven {
-    transform: scale(0.7);
+    transform: scale(0.84);
   }
 }
   
