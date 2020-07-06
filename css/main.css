@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Istok+Web:700|Playfair+Display|Poppins:300,500&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web:700|Playfair+Display|Montserrat:200,300,400,600,700&subset=latin-ext');
 @charset "utf-8";
 .fIstok {
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
-.fPoppinsRegular {
-  font-family: 'Poppins', sans-serif;
+.fMontserratRegular {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
-.fPoppinsBold {
-  font-family: 'Poppins', sans-serif;
+.fMontserratBold {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 .fPlayfair {
@@ -47,7 +47,7 @@ input:-webkit-autofill {
 body,
 html {
   background: #25241C;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #ffffff;
   padding: 0;
@@ -366,7 +366,7 @@ a {
   text-align: center;
 }
 .sidebar .scrollDown a {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 .sidebar .scrollDown a span {
@@ -394,7 +394,7 @@ a {
   display: none;
 }
 .sidebar .scrollUp a {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 .sidebar .scrollUp a span {
@@ -730,7 +730,7 @@ a {
 .whySection .whyTable .whyColumnLeft h2 {
   font-size: 50px;
   line-height: 60px;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 .whySection .whyTable .whyColumnCenter {
@@ -850,7 +850,7 @@ a {
   vertical-align: middle;
   padding-left: 30px;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 .whySection .icons .iconRow.icon1 .circle img {
@@ -915,7 +915,7 @@ a {
 }
 .clientsSection .headline .headlineMiddle h2 {
   color: #f9b22c;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 150px;
   line-height: 150px;
@@ -966,7 +966,7 @@ a {
 .clientsSection .subTitle {
   padding: 30px 0 50px;
   text-align: center;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 50px;
 }
@@ -1116,7 +1116,7 @@ a {
 }
 .websitesSection .content .number h2 {
   color: #f9b22c;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 150px;
   line-height: 150px;
@@ -1182,9 +1182,10 @@ a {
   font-size: 50px;
   position: relative;
   z-index: 1;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   line-height: 54px;
+  text-transform: uppercase;
 }
 .websitesSection .content .button {
   padding: 40px 0 0 0;
@@ -1230,7 +1231,7 @@ a {
   font-size: 50px;
   margin: 0;
   padding: 0 0 80px;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 .ourService .items {
@@ -1258,7 +1259,7 @@ a {
 .ourService .items .item .itemContainer .title {
   color: #f9b22c;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   padding-top: 5px;
 }
@@ -1298,7 +1299,7 @@ a {
 .whoSection h2 {
   font-size: 50px;
   line-height: 60px;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-align: center;
   padding-bottom: 60px;
@@ -1320,7 +1321,7 @@ a {
   display: table-cell;
   vertical-align: middle;
   font-size: 120px;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #f9b22c;
   padding-right: 40px;
@@ -1369,7 +1370,7 @@ a {
   display: table-cell;
   vertical-align: middle;
   font-size: 120px;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #f9b22c;
   padding-left: 40px;
@@ -1533,7 +1534,7 @@ a {
 .contactSection h2 {
   font-size: 50px;
   line-height: 60px;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-align: center;
   padding-bottom: 60px;
@@ -1730,7 +1731,7 @@ a {
 .contactSection .links .column a {
   color: #ffffff;
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -1745,7 +1746,7 @@ a {
   padding: 0 0 80px 0;
   text-align: center;
   color: #8C6A3A;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 .contactSection .copyright a {
@@ -1850,7 +1851,7 @@ a {
 }
 .rhinoSlider .rhinoSlide .headline h1 {
   font-size: 50px;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding-bottom:65px;
 }
