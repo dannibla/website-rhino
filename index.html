@@ -1171,6 +1171,17 @@
     color: #1d1c16;
 }
 
+.sliderSection .portfolioGradient {
+    margin-top: -645px;
+    position: absolute;
+    z-index: 1200;
+}
+
+@media screen and (max-width: 599px) {
+	.sliderSection .portfolioGradient {
+		display:none;
+	}
+}
 .content-card {
     padding-top: 80px;
 }
@@ -1226,7 +1237,7 @@
 
 @media screen and (max-width: 989px) {
 	.card {
-	    left: 180px;
+	    left: 210px;
 		margin: 0.5rem;
 	}
 	.card-container {
@@ -1237,11 +1248,13 @@
 
 @media screen and (max-width: 599px) {
 	.card {
-		left: 300px;
+		left: 187px;
 		margin: 0.5rem;
 	}
 	.card-container {
 		overflow: auto;
+		margin-left: -140px;
+		margin-right: -140px;
 	}
 	
 	.websitesSection .content .title {
@@ -1502,6 +1515,7 @@
                                                     <circle class="circle1" fill="#1d1c16" stroke="#8C6A3A" stroke-width="2" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
                                                 </svg>
                                                 <img src="./img/service/endless support.png" alt="">
+												<!--<div id="endlessSupport"></div>-->
                                             </div>
                                             <div class="title">Endless <br>Support</div>
                                         </div>
@@ -1642,7 +1656,7 @@
                 </div>
 
 				<div class="section fp-auto-height">
-                    <div class="sliderSection" style="padding-top:120px;">
+                    <div class="sliderSection">
                         <div class="wrapper">
                             <div class="rhinoSlider" data-parallax='{"y": -40}'>
                                 <div class="rhinoSlide">
@@ -1685,12 +1699,14 @@
 									
                                 </div>
                             </div>
+							<img src="./img/bg-porfolio.png" class="portfolioGradient">
 						</div>
+						
 					</div>
                 </div>
 
                 <div class="section fp-auto-height">
-                    <div class="ourService" style="padding-top:120px;">
+                    <div class="ourService">
                         <div class="wrapper">
                             <div class="headline" data-parallax='{"y": -40}'>
                                 <h2>Our Service</h2>
@@ -1930,8 +1946,6 @@
 							 <div class="columns">
                                 <div class="column">
                                     <div id="social-test">
-                                        <h2> Address</h2>
-										<br>
 										<div class="row">
 											<div class="col-md-4">
 												<img src="./img/address/pin.svg"> 
@@ -2044,8 +2058,15 @@
     });
 	
     if ($(window).width() < 460) {
-	   $(".card-container").scrollLeft(300);
+	   $(".card-container").scrollLeft(185);
 	}
+});
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    if (scroll == 0) {
+        document.getElementById('myVideo').play();
+    }
 });
 
       </script>
