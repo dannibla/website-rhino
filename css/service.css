@@ -3526,7 +3526,7 @@ a {
 	left: 0;
 	right: auto;
 	display: flex;
-	width: 35%;
+	width: 45%;
 	height: 100%;
 	padding-right: 50px;
 	padding-left: 50px;
@@ -3537,7 +3537,9 @@ a {
 	-ms-flex-align: center;
 	align-items: center
 }
-
+.w-col-medium-4 {
+	padding:20px;
+}
 .skill-info-sticky {
 	position: -webkit-sticky;
 	position: sticky;
@@ -9422,7 +9424,7 @@ a {
 	.skill-info {
 		position: relative;
 		width: 100%;
-		height: 65vh;
+		height: 100%;
 		margin-top: 75px;
 		margin-bottom: 75px;
 		-webkit-box-orient: horizontal;
@@ -10301,6 +10303,10 @@ a {
 	padding: 5px 25px 5px 0;
 }
 
+	.rock-row {
+		display:flex;
+	}
+	
 @media (max-width: 567px) {
 	.skill-photo .skill-work-photo {
 		display:none;
@@ -10316,6 +10322,12 @@ a {
 	}
 	.page-social.pull-left {	
 		float: none;
+	}	
+	.rock-row {
+		display:block;
+	}
+	.w-col-medium-4 {
+		padding:0;
 	}
 }
 
