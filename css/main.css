@@ -970,7 +970,7 @@ a {
   font-weight: 700;
   text-transform:uppercase;
   font-size: 50px;
-}
+}/*
 .clientsSection .quoteSlider .quote {
   position: relative;
   padding: 0 140px;
@@ -1001,7 +1001,7 @@ a {
 }
 .clientsSection .quoteSlider .quote .quoteContainer .end img {
   width: 27px;
-}
+}*/
 .clientsSection .quoteSlider .slick-prev {
   width: 40px !important;
   height: 40px !important;
@@ -1043,58 +1043,6 @@ a {
 }
 .clientsSection .quoteSlider .slick-next:hover {
   border: solid 2px #8C6A3A;
-}
-.clientsSection .logoSlider {
-  display: table;
-  width: 100%;
-}
-.clientsSection .logoSlider .logoColumn {
-  padding: 0;
-  display: table-cell;
-}
-.clientsSection .logoSlider .logoColumn .logoContainer {
-  text-align: center;
-  transform: scale(0.7);
-  transition: transform .2s;
-  max-width: 180px;
-  margin: 0 auto;
-}
-.clientsSection .logoSlider .logoColumn .logoContainer img {
-  max-width: 100%;
-  margin: 0 auto;
-  cursor: pointer;
-  background: #fff;
-  padding:10px;
-  border-radius: 50%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-.clientsSection .logoSlider .logoColumn .logoContainer img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-.clientsSection .logoSlider .logoColumn .logoContainer .hover {
-  display: none;
-}
-.clientsSection .logoSlider .logoColumn .logoContainer:hover .hover {
-  display: block;
-}
-.clientsSection .logoSlider .logoColumn .logoContainer:hover .normal {
-  display: none;
-}
-
-.clientsSection .logoSlider .logoColumn.current .logoContainer {
-  display: block;
-  transform: scale(1);
-}
-
-.clientsSection .logoSlider .logoColumn.current .logoContainer .hover {
-  display: block;
-}
-.clientsSection .logoSlider .logoColumn.current .logoContainer .normal {
-  display: none;
 }
 .websitesSection {
   position: relative;

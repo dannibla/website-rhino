@@ -35,6 +35,7 @@
         <script src="./assets/js/jquery.fullpage.js"></script>
         <script src="./assets/js/particles.min.js"></script>
         <script src="./assets/js/lottie.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js'></script>
         <script src="./js/main.js"></script>
 		<style>
 		
@@ -1364,7 +1365,25 @@
   background-color: #c0392b;
 }
 
+.quoteSlider .slick-slide img.normal  {
+	height:140px;
+	margin:auto;
+	border-radius: 50%;
+	display:none;
+}
 
+.quoteSlider .slick-slide.slick-active img.normal  {
+	display:block;
+}
+
+.slick-track {
+	margin-top:10px;
+}
+
+.quoteSlider .slick-center img.normal  {
+	height:160px;
+	margin-top:-10px;
+}
 
 		</style>
     </head>
@@ -1451,7 +1470,6 @@
 
         <div class="rhino">
             <div id="fullpage">
-
 				<div class="section fp-auto-height">
                     <div class="websitesSection" style="padding:0;">
 						<div class="content iframe-content">
@@ -1560,97 +1578,46 @@
                     <div class="clientsSection" style="padding-top:120px;">
                         <div class="wrapper">
                             <div class="subTitle" data-parallax='{"y": -20}'>Our Clients</div>
-                            <div class="quoteSlider">
-                                <div class="quote">
-                                    <div class="logoSlider">
-                                        <div class="logoColumn">
-                                            <div class="logoContainer zoomSeven">
-                                                <a data-slide="1">
-                                                    <img class="normal" src="./logo/1.png" alt="">
-                                                    <img class="hover" src="./logo/1.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="logoColumn">
-                                            <div class="logoContainer zoomEight">
-                                                <a data-slide="2">
-                                                    <img class="normal" src="./logo/2.png" alt="">
-                                                    <img class="hover" src="./logo/2.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-										 <div class="logoColumn">
-                                            <div class="logoContainer zoomNine">
-                                                <a data-slide="3">
-                                                    <img class="normal" src="./logo/3.png" alt="">
-                                                    <img class="hover" src="./logo/3.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="logoColumn">
-                                            <div class="logoContainer zoomEight">
-                                                <a data-slide="4">
-                                                    <img class="normal" src="./logo/4.png" alt="">
-                                                    <img class="hover" src="./logo/4.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-										 <div class="logoColumn">
-                                            <div class="logoContainer zoomSeven">
-                                                <a data-slide="5">
-                                                    <img class="normal" src="./logo/5.png" alt="">
-                                                    <img class="hover" src="./logo/5.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quote">
-                                    <div class="logoSlider">
-                                        <div class="logoColumn">
-                                            <div class="logoContainer zoomSeven">
-                                                <a data-slide="1">
-                                                    <img class="normal" src="./logo/6.png" alt="">
-                                                    <img class="hover" src="./logo/6.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="logoColumn">
-                                            <div class="logoContainer zoomEight">
-                                                <a data-slide="2">
-                                                    <img class="normal" src="./logo/7.png" alt="">
-                                                    <img class="hover" src="./logo/7.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-										 <div class="logoColumn">
-                                            <div class="logoContainer zoomNine">
-                                                <a data-slide="3">
-                                                    <img class="normal" src="./logo/8.jpg" alt="">
-                                                    <img class="hover" src="./logo/8.jpg" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="logoColumn">
-                                            <div class="logoContainer zoomEight">
-                                                <a data-slide="4">
-                                                    <img class="normal" src="./logo/9.jpg" alt="">
-                                                    <img class="hover" src="./logo/9.jpg" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-										 <div class="logoColumn">
-                                            <div class="logoContainer zoomSeven">
-                                                <a data-slide="5">
-                                                    <img class="normal" src="./logo/10.jpg" alt="">
-                                                    <img class="hover" src="./logo/10.jpg" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+							
+							
+							
+							
+                            <div class="quoteSlider center">
+								<div>
+									<img class="normal" src="./logo/1.png">
+								</div>
+								<div>
+									<img class="normal" src="./logo/2.png">
+								</div>
+								<div>
+									<img class="normal" src="./logo/3.png">
+								</div>
+								<div>
+									<img class="normal" src="./logo/4.png">
+								</div>
+								<div>
+									<img class="normal" src="./logo/5.png">
+								</div>
+								<div>
+									<img class="normal" src="./logo/6.png">
+								</div>
+								<div>
+									<img class="normal" src="./logo/7.png">
+								</div>
+								<div>
+									<img class="normal" src="./logo/8.jpg">
+								</div>
+								<div>
+									<img class="normal" src="./logo/9.jpg">
+								</div>
+								<div>
+									<img class="normal" src="./logo/10.jpg">
+								</div>
+							</div>
+							
+							
+							
+							
                         </div>
                     </div>
                 </div>
@@ -1924,7 +1891,138 @@
                                     </div>
                                 </div>
                             </div>
+							<style>
+							.money-tabs {
+								width: 100%;
+								height: 400px;
+								position: relative;
+								display: block;
+								margin-top: 100px;
+								margin-bottom: 100px;
+							}
+							.money-tabs .frame {
+								width:491px;
+								margin:auto;
+								height:327px;
+							}
+							.money-tabs .slider-tabs {
+								width: 100%;
+								height: 40px;
+								position: relative;
+								display: block;
+							}
+							.money-tabs input[type=range]#slider {
+							  box-sizing: border-box;
+							  font-size: 16px;
+							  line-height: 1;
+							  height: 2em;
+							  background-color: transparent;
+							  cursor: pointer;
+							  -webkit-appearance: none;
+							  width: 491px;
+							   margin:auto;
+							  display: block;
+							}
+							.money-tabs input[type=range]#slider::-webkit-slider-thumb {
+							  -webkit-appearance: none;
+							}
+							.money-tabs input[type=range]#slider:focus {
+							  outline: none;
+							}
+							.money-tabs input[type=range]#slider::-ms-track {
+							  width: 100%;
+							  cursor: pointer;
+							  background: transparent;
+							  border-color: transparent;
+							  color: transparent;
+							}
+							.money-tabs input[type=range]#slider::-webkit-slider-thumb {
+							  -webkit-appearance: none;
+							  width: 2em;
+							  height: 2em;
+							  margin-top: 0;
+							  background-color: #25241e;
+							  border-radius: 1em;
+							  border: solid 2px #f9b22c;
+							  cursor: pointer;
+							}
+							.money-tabs input[type=range]#slider::-moz-range-thumb {
+							  width: 2em;
+							  height: 2em;
+							  margin-top: 0;
+							  background-color: #25241e;
+							  border-radius: 1em;
+							  border: solid 2px #f9b22c;
+							  cursor: pointer;
+							}
+							.money-tabs input[type=range]#slider::-ms-thumb {
+							  width: 2em;
+							  height: 2em;
+							  margin-top: 0;
+							  background-color: #25241e;
+							  border-radius: 1em;
+							  border: solid 2px #f9b22c;
+							  cursor: pointer;
+							}
+							.money-tabs input[type=range]#slider:hover::-webkit-slider-thumb {
+							  border-color: rgba(255, 255, 255, 0.7);
+							}
+							.money-tabs input[type=range]#slider:hover::-moz-range-thumb {
+							  border-color: rgba(255, 255, 255, 0.7);
+							}
+							.money-tabs input[type=range]#slider:hover::-ms-thumb {
+							  border-color: rgba(255, 255, 255, 0.7);
+							}
+							.money-tabs input[type=range]#slider:active::-webkit-slider-thumb {
+							  border-color: #8C6A3A;
+							}
+							.money-tabs input[type=range]#slider:active::-moz-range-thumb {
+							  border-color: #8C6A3A;
+							}
+							.money-tabs input[type=range]#slider:active::-ms-thumb {
+							  border-color: #8C6A3A;
+							}
+							.money-tabs input[type=range]#slider::-webkit-slider-runnable-track {
+							  width: 100%;
+							  cursor: pointer;
+							  height: 1em;
+							  border-bottom: solid 2px #8C6A3A;
+							  background-color: transparent;
+							}
+							.money-tabs input[type=range]#slider::-moz-range-track {
+							  width: 100%;
+							  cursor: pointer;
+							  height: 1em;
+							  border-bottom: solid 2px #8C6A3A;
+							  background-color: transparent;
+							}
+							.money-tabs input[type=range]#slider::-ms-track {
+							  background: transparent;
+							  border-color: transparent;
+							  color: transparent;
+							}
+
+							@media screen and (max-width: 599px) {
+								.money-tabs .frame {
+									margin-left: -90px;
+								}
+								h2.money-header {
+									margin-bottom: -60px;
+								}
+								.money-tabs input[type=range]#slider {
+									width: 297px;
+								}
+							}
+
 							
+							</style>
+							<h2 class="money-header" style="margin-top:120px;" data-parallax='{"y": -20}'>We Work With in Your Budget</h2>
+							<div class="money-tabs">
+								<div class="frame" id="frame1"></div>
+								<div class="slider-tabs">
+									<input type="range" id="slider" min="0" max="8" step="1" value="0"/>
+								</div>
+							</div>
                         </div>
                     </div>
                 </div>
@@ -2019,6 +2117,41 @@
 		});
     </script>
     <script>
+		let frame1 = document.getElementById('frame1'),
+		slider = document.getElementById('slider'),
+		frameWidth = 491,
+		frameHeight = 327,
+		activeFrame = 0,
+		frames = 8,
+		xStart = null,
+		s2Settings = {
+			sensitivity: 40
+		},
+		s3Settings = {
+			fps: 20,
+			reverse: false
+		},
+		now, delta, then = Date.now(),
+		interval = 1000 / s3Settings.fps;
+
+		let gui = new dat.GUI()
+
+		let sprite = new Image();
+		sprite.onload = function() {
+			frame1.style.background = `url(${sprite.src})`;
+			
+			solution1();
+
+		};
+		sprite.src = './img/wallet.jpg';
+
+		function solution1() {    
+			slider.addEventListener("input", function() {
+				activeFrame = parseInt(this.value);
+				frame1.style.backgroundPositionX = `-${activeFrame * frameWidth}px`;
+			});
+		}
+
         var animation = bodymovin.loadAnimation({
         container: document.getElementById('loaderAnime'),
             

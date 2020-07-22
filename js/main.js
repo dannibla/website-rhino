@@ -235,7 +235,31 @@ $(window).ready(function() {
     rhinoSlider.slick('slickGoTo', 2);
   });
 
-  var quoteSlider = $('.quoteSlider').slick();
+  var quoteSlider = $('.quoteSlider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 5,
+  infinite: true,
+  speed: 500,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 
   // mobile menu
 
