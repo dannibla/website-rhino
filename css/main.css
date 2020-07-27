@@ -1195,6 +1195,11 @@ a {
 .ourService .items .item .itemContainer {
   height: 190px;
 }
+
+.ourService .items .item .itemContainer:hover {
+  transform: scale(1.2);
+}
+
 .ourService .items .item .itemContainer .icon {
   height: 80px;
   line-height:80px;
@@ -1210,7 +1215,7 @@ a {
   color: #f9b22c;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   padding-top: 5px;
 }
 .ourService .items .item .itemContainer .desc {
