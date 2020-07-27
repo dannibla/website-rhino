@@ -1404,6 +1404,12 @@ a {
   padding: 30px 0 0 0;
   font-size: 20px;
 }
+
+.whoSection .team .column .columnContainer p {
+  font-size: 10px;
+  color:#f9b22c;
+}
+
 .whoSection .team .column .columnContainer svg {
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
