@@ -30284,7 +30284,7 @@ Webflow.require('ix2').init({
                         "easing": "",
                         "duration": 500,
                         "target": {
-                            "selector": ".menu",
+                            "selector": ".menus",
                             "selectorGuids": ["7e355ac6-1f62-3d34-a47c-872f37a0a5b5"]
                         },
                         "yValue": -75,
@@ -30399,7 +30399,7 @@ Webflow.require('ix2').init({
                         "easing": "inOutQuart",
                         "duration": 1250,
                         "target": {
-                            "selector": ".menu",
+                            "selector": ".menus",
                             "selectorGuids": ["7e355ac6-1f62-3d34-a47c-872f37a0a5b5"]
                         },
                         "xValue": 0,

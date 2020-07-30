@@ -10545,3 +10545,22 @@ header.mobile-term nav ul li a:hover {
     border-radius: 25px;
     margin-right: 10px;
 }
+
+
+@media screen and (max-width:1400px) {
+	.skill-info-text {
+		font-size: 12px;
+		margin-bottom: 1.2vw;
+	}
+	.h2-title.info {
+		font-size: 2.2rem;
+		margin-bottom: 1.2vw;
+	}
+	.skill-info-sticky {
+		height: auto;
+	}
+	.skill-info .h5-title {
+		font-size: 12px;
+	}
+
+}	

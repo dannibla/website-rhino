@@ -287,6 +287,7 @@ $(window).ready(function() {
     $('.quoteSlider').slick('slickGoTo', slideno - 1);
   });
 
+/*
 
 	particlesJS("particles-js", {
 	  particles: {
@@ -399,7 +400,7 @@ $(window).ready(function() {
 	  retina_detect: true
 	});
 
-
+*/
 
 });
 
